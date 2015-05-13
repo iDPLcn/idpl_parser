@@ -1,7 +1,0 @@
-<config>
-	<host>komatsu.chtc.wisc.edu</host>
-	<port>5011</port>
-	<path>/tmp/testbykun/test1.txt</path>
-	<timestamp>0</timestamp>
-	<offset>0</offset>
-</config>
