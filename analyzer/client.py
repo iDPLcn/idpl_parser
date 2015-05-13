@@ -36,7 +36,8 @@ class Client:
 		self.sourceFile.close
     
 	def combi(self, result):
-		return self.uriShell+ " " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
+		#return "/home/kun/GraduationProject/post_iperf_time.sh " + result + " USERNAME=idpl PASSWORD=idpl@jsi HOSTNAME=115.25.138.244:11401"
+		return self.uriShell+ " " + result + " USERNAME=idpl PASSWORD=idpl@jsi HOSTNAME=115.25.138.244:11401"
 
 	def excuteShell(self, result):
 		output = os.popen(result)
@@ -60,7 +61,8 @@ class Client:
 		self.getOptions()
 
 		if not os.path.exists(self.uriTime):
-			print('WARN! Create "timeRead.txt"!')
+			print('WARN! You should create an file name "timeRead.txt" in the path same as client.py\'s,\n\
+and make sure write the correct time stamp which is the newest one in the database,\nthen restart the script.')
 			sys.exit(0)
         
 		timeReadFile = open(self.uriTime)
