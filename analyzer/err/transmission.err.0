@@ -1,0 +1,5 @@
+Family  : AF_INET
+Type    : SOCK_STREAM
+Protocol: IPPROTO_TCP
+
+closing socket

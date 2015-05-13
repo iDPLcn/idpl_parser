@@ -1,0 +1,91 @@
+************************2015-05-13 20:30:00************************
+
+/var/lib/condor/execute/dir_17699/condor_exec.exe
+/home/phil/placement/placement2.log
+5022
+/home/idpl/remoteLogs/komatsu/client_config.xml
+/home/phil/placement/placement2.log  5022 /home/idpl/remoteLogs/komatsu/client_config.xml
+client start
+client init
+client demand
+xmlHandler init: /home/idpl/remoteLogs/komatsu/client_config.xml
+return tree successfully
+return root successfully
+five vals:
+komatsu.chtc.wisc.edu 5022 /home/idpl/remoteLogs/komatsu/placement2.log 1431515705.391598 54
+serverInfo is:' 5022'
+komatsu.chtc.wisc.edu 5022 /home/idpl/remoteLogs/komatsu/placement2.log 1431515705.391598 54
+rec is: 3186
+(0, 3186)
+(1436, 3186)
+014 (3147.000.001) 05/13 08:15:00 Node 1 executing on host: <137.110.119.113:42774>
+...
+008 (3147.000.000) 05/13 05:15:00 'murpa.rocksclusters.org(iperf) server:start'
+...
+014 (3147.000.000) 05/13 08:15:00 Node 0 executing on host: <128.104.153.60:39772>
+...
+001 (3147.000.000) 05/13 08:15:00 Job executing on host: MPI_job
+...
+008 (3147.000.000) 05/13 08:15:00 'komatsu.chtc.wisc.edu(iperf) client:start'
+...
+033 (3147.000.000) 05/13 08:15:02 Changing job attribute iperfServer from undefined to 'murpa.rocksclusters.org 5001'
+...
+008 (3147.000.000) 05/13 08:15:15 'iperf,komatsu.chtc.wisc.edu,murpa.rocksclusters.org,1431519305.749339,1431519315.978236,1,10.228897,70784'
+...
+008 (3147.000.000) 05/13 08:15:16 'komatsu.chtc.wisc.edu(iperf) client:end'
+...
+008 (3147.000.000) 05/13 05:15:16 'murpa.rocksclusters.org(iperf) server:end'
+...
+033 (3147.000.000) 05/13 08:15:16 Changing job attribute iperfServer from 'murpa.rocksclusters.org 5001' to UNDEFINED
+...
+033 (3147.000.000) 05/13 08:15:16 Changing job attribute netcatMD5 from '9643545860b34ffd77aa5ada90598cd0' to UNDEFINED
+...
+008 (3147.000.000) 05/13 08:15:16 'komatsu.chtc.wisc.edu(netcat) client:start'
+...
+033 (3147.000.000) 05/13 08:15:18 Changing job attribute netcatServer from undefined to 'murpa.rocksclusters.org 5011'
+...
+033 (3147.000.000) 05/13 08:15:37 Changing job attribute netcatMD5 from undefined to '9643545860b34ffd77aa5ada90598cd0'
+...
+008 (3147.000.000) 05/13 05:15:38 'murpa.rocksclusters.org(netcat) server:end'
+...
+033 (3147.000.000) 05/13 08:15:38 Changing job attribute netcatServer from 'murpa.rocksclusters.org 5011' to UNDEFINED
+...
+015 (3147.000.001) 05/13 08:15:39 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	739  -  Run Bytes Sent By Node
+	19066  -  Run Bytes Received By Node
+	739  -  Total Bytes Sent By Node
+	19066  -  Total Bytes Received By Node
+...
+008 (3147.000.000) 05/13 08:15:42 'netcat,komatsu.chtc.wisc.edu,murpa.rocksclusters.org,1431519321.405347,1431519337.775311,1,16.369964,104857600'
+...
+008 (3147.000.000) 05/13 08:15:42 'komatsu.chtc.wisc.edu(netcat) client:end'
+...
+015 (3147.000.000) 05/13 08:15:42 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	716  -  Run Bytes Sent By Node
+	19066  -  Run Bytes Received By Node
+	716  -  Total Bytes Sent By Node
+	19066  -  Total Bytes Received By Node
+...
+004 (3147.000.000) 05/13 08:15:44 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	1455  -  Run Bytes Sent By Job
+	38132  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+
+time is 1431519305.749339
+return root successfully
+dadada
