@@ -1,272 +1,114 @@
-****************2015-03-23 16:18:03****************
-
-****************2015-03-23 16:19:03****************
-
-****************2015-03-23 16:20:04****************
-
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-hahaha
-well done!
-****************2015-03-23 16:20:39****************
-
+014 (694.000.000) 03/13 23:30:00 Node 0 executing on host: <115.25.138.244:40717>
+...
+014 (694.000.001) 03/13 23:30:00 Node 1 executing on host: <159.226.15.235:37327>
+...
+001 (694.000.000) 03/13 23:30:00 Job executing on host: MPI_job
+...
+008 (694.000.000) 03/13 23:30:00 'mickey.buaa.edu.cn: iperf client start'
+...
+008 (694.000.000) 03/13 23:30:10 'idpl.elab.cnic.cn: iperf server start'
+...
+033 (694.000.000) 03/13 23:30:10 Changing job attribute IperfServer from undefined to UNDEFINED
+...
+033 (694.000.000) 03/13 23:30:51 Changing job attribute IperfServer from undefined to 'idpl.elab.cnic.cn 5001'
+...
+008 (694.000.000) 03/13 23:31:05 'mickey.buaa.edu.cn: iperf 14792 Kbits/sec'
+...
+008 (694.000.000) 03/13 23:31:05 'iperf,mickey.buaa.edu.cn,idpl.elab.cnic.cn,1426260655.770040,1426260665.942792,1,10.172752,18304'
+...
+008 (694.000.000) 03/13 23:31:05 'mickey.buaa.edu.cn: iperf client end'
+...
+015 (694.000.000) 03/13 23:31:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	10328  -  Run Bytes Sent By Node
+	9528  -  Run Bytes Received By Node
+	10328  -  Total Bytes Sent By Node
+	9528  -  Total Bytes Received By Node
+...
+008 (694.000.000) 03/13 23:32:31 'idpl.elab.cnic.cn: iperf 14.7 Mbits/sec'
+...
+008 (694.000.000) 03/13 23:32:31 'idpl.elab.cnic.cn: iperf server error'
+...
+033 (694.000.000) 03/13 23:32:31 Changing job attribute IperfServer from 'idpl.elab.cnic.cn 5001' to UNDEFINED
+...
+015 (694.000.001) 03/13 23:32:31 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	10361  -  Run Bytes Sent By Node
+	9528  -  Run Bytes Received By Node
+	10361  -  Total Bytes Sent By Node
+	9528  -  Total Bytes Received By Node
+...
+004 (694.000.000) 03/13 23:32:32 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	20689  -  Run Bytes Sent By Job
+	19056  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (694.000.001) 03/14 00:00:00 Node 1 executing on host: <159.226.15.235:37327>
+...
+014 (694.000.000) 03/14 00:00:00 Node 0 executing on host: <115.25.138.244:40717>
+...
+001 (694.000.000) 03/14 00:00:00 Job executing on host: MPI_job
+...
+008 (694.000.000) 03/14 00:00:00 'mickey.buaa.edu.cn: iperf client start'
+...
+008 (694.000.000) 03/14 00:00:10 'idpl.elab.cnic.cn: iperf server start'
+...
+033 (694.000.000) 03/14 00:00:10 Changing job attribute IperfServer from undefined to UNDEFINED
+...
+033 (694.000.000) 03/14 00:00:50 Changing job attribute IperfServer from undefined to 'idpl.elab.cnic.cn 5001'
+...
+008 (694.000.000) 03/14 00:01:01 'mickey.buaa.edu.cn: iperf 11949 Kbits/sec'
+...
+008 (694.000.000) 03/14 00:01:01 'iperf,mickey.buaa.edu.cn,idpl.elab.cnic.cn,1426262451.250781,1426262461.574660,1,10.323879,14976'
+...
+008 (694.000.000) 03/14 00:01:01 'mickey.buaa.edu.cn: iperf client end'
+...
+015 (694.000.000) 03/14 00:01:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	10367  -  Run Bytes Sent By Node
+	9528  -  Run Bytes Received By Node
+	10367  -  Total Bytes Sent By Node
+	9528  -  Total Bytes Received By Node
+...
+008 (694.000.000) 03/14 00:02:30 'idpl.elab.cnic.cn: iperf 11.6 Mbits/sec'
+...
+008 (694.000.000) 03/14 00:02:30 'idpl.elab.cnic.cn: iperf server error'
+...
+033 (694.000.000) 03/14 00:02:31 Changing job attribute IperfServer from 'idpl.elab.cnic.cn 5001' to UNDEFINED
+...
+015 (694.000.001) 03/14 00:02:31 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	10361  -  Run Bytes Sent By Node
+	9528  -  Run Bytes Received By Node
+	10361  -  Total Bytes Sent By Node
+	9528  -  Total Bytes Received By Node
+...
+004 (694.000.000) 03/14 00:02:31 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	20728  -  Run Bytes Sent By Job
+	19056  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...

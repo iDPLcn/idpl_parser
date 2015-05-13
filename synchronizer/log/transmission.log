@@ -1,0 +1,3152 @@
+000 (1188.000.000) 05/09 17:47:22 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1188.000.000) 05/09 17:48:04 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1188.000.001) 05/09 17:48:07 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1188.000.000) 05/09 17:48:07 Job executing on host: MPI_job
+...
+033 (1188.000.000) 05/09 17:48:10 Setting job attribute SocketServer to ' 8888'
+...
+015 (1188.000.000) 05/09 17:48:14 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22467  -  Run Bytes Sent By Node
+	15798  -  Run Bytes Received By Node
+	22467  -  Total Bytes Sent By Node
+	15798  -  Total Bytes Received By Node
+...
+015 (1188.000.001) 05/09 17:50:10 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22633  -  Run Bytes Sent By Node
+	15798  -  Run Bytes Received By Node
+	22633  -  Total Bytes Sent By Node
+	15798  -  Total Bytes Received By Node
+...
+005 (1188.000.000) 05/09 17:50:11 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45100  -  Run Bytes Sent By Job
+	31596  -  Run Bytes Received By Job
+	45100  -  Total Bytes Sent By Job
+	31596  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       48       20 168086309
+	   Memory (MB)          :        0        1      3183
+...
+000 (1191.000.000) 05/09 19:14:32 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1191.000.000) 05/09 19:25:03 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1191.000.000) 05/09 19:25:04 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	17029  -  Run Bytes Sent By Node
+	15830  -  Run Bytes Received By Node
+	17029  -  Total Bytes Sent By Node
+	15830  -  Total Bytes Received By Node
+...
+014 (1191.000.001) 05/09 19:25:06 Node 1 executing on host: <128.104.153.60:39772>
+...
+015 (1191.000.001) 05/09 19:25:09 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	17029  -  Run Bytes Sent By Node
+	15830  -  Run Bytes Received By Node
+	17029  -  Total Bytes Sent By Node
+	15830  -  Total Bytes Received By Node
+...
+005 (1191.000.000) 05/09 19:25:10 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	34058  -  Run Bytes Sent By Job
+	31660  -  Run Bytes Received By Job
+	34058  -  Total Bytes Sent By Job
+	31660  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       43       20 168086162
+	   Memory (MB)          :        0        1      3183
+...
+000 (1192.000.000) 05/09 19:57:31 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1192.000.000) 05/09 19:58:08 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1192.000.001) 05/09 19:58:12 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1192.000.000) 05/09 19:58:12 Job executing on host: MPI_job
+...
+033 (1192.000.000) 05/09 19:58:15 Setting job attribute SocketServer to ' 8888'
+...
+015 (1192.000.000) 05/09 19:58:18 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22467  -  Run Bytes Sent By Node
+	15798  -  Run Bytes Received By Node
+	22467  -  Total Bytes Sent By Node
+	15798  -  Total Bytes Received By Node
+...
+015 (1192.000.001) 05/09 20:00:15 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22633  -  Run Bytes Sent By Node
+	15798  -  Run Bytes Received By Node
+	22633  -  Total Bytes Sent By Node
+	15798  -  Total Bytes Received By Node
+...
+005 (1192.000.000) 05/09 20:00:16 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45100  -  Run Bytes Sent By Job
+	31596  -  Run Bytes Received By Job
+	45100  -  Total Bytes Sent By Job
+	31596  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       48       20 168086115
+	   Memory (MB)          :        0        1      3183
+...
+000 (1194.000.000) 05/09 20:04:21 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1194.000.000) 05/09 20:52:25 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1194.000.001) 05/09 20:52:28 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1194.000.000) 05/09 20:52:28 Job executing on host: MPI_job
+...
+033 (1194.000.000) 05/09 20:52:31 Setting job attribute SocketServer to ' 8888'
+...
+015 (1194.000.000) 05/09 20:52:37 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22561  -  Run Bytes Sent By Node
+	15877  -  Run Bytes Received By Node
+	22561  -  Total Bytes Sent By Node
+	15877  -  Total Bytes Received By Node
+...
+015 (1194.000.001) 05/09 20:52:42 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22527  -  Run Bytes Sent By Node
+	15877  -  Run Bytes Received By Node
+	22527  -  Total Bytes Sent By Node
+	15877  -  Total Bytes Received By Node
+...
+005 (1194.000.000) 05/09 20:52:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45088  -  Run Bytes Sent By Job
+	31754  -  Run Bytes Received By Job
+	45088  -  Total Bytes Sent By Job
+	31754  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168085486
+	   Memory (MB)          :        0        1      3183
+...
+000 (1236.000.000) 05/12 10:09:44 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1236.000.000) 05/12 10:13:01 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1236.000.001) 05/12 10:13:04 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1236.000.000) 05/12 10:13:04 Job executing on host: MPI_job
+...
+033 (1236.000.000) 05/12 10:13:06 Setting job attribute SocketServer to ' 8888'
+...
+015 (1236.000.000) 05/12 10:13:11 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22900  -  Run Bytes Sent By Node
+	15883  -  Run Bytes Received By Node
+	22900  -  Total Bytes Sent By Node
+	15883  -  Total Bytes Received By Node
+...
+015 (1236.000.001) 05/12 10:13:14 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22703  -  Run Bytes Sent By Node
+	15883  -  Run Bytes Received By Node
+	22703  -  Total Bytes Sent By Node
+	15883  -  Total Bytes Received By Node
+...
+005 (1236.000.000) 05/12 10:13:14 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45603  -  Run Bytes Sent By Job
+	31766  -  Run Bytes Received By Job
+	45603  -  Total Bytes Sent By Job
+	31766  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062973
+	   Memory (MB)          :        0        1      3183
+...
+000 (1237.000.000) 05/12 10:25:41 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1237.000.000) 05/12 10:26:17 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1237.000.001) 05/12 10:26:20 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1237.000.000) 05/12 10:26:20 Job executing on host: MPI_job
+...
+033 (1237.000.000) 05/12 10:26:22 Setting job attribute SocketServer to ' 5011'
+...
+015 (1237.000.000) 05/12 10:26:27 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22900  -  Run Bytes Sent By Node
+	15884  -  Run Bytes Received By Node
+	22900  -  Total Bytes Sent By Node
+	15884  -  Total Bytes Received By Node
+...
+015 (1237.000.001) 05/12 10:26:30 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22703  -  Run Bytes Sent By Node
+	15884  -  Run Bytes Received By Node
+	22703  -  Total Bytes Sent By Node
+	15884  -  Total Bytes Received By Node
+...
+005 (1237.000.000) 05/12 10:26:31 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45603  -  Run Bytes Sent By Job
+	31768  -  Run Bytes Received By Job
+	45603  -  Total Bytes Sent By Job
+	31768  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062961
+	   Memory (MB)          :        0        1      3183
+...
+000 (1238.000.000) 05/12 10:32:48 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1238.000.000) 05/12 10:32:55 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1238.000.001) 05/12 10:32:58 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1238.000.000) 05/12 10:32:58 Job executing on host: MPI_job
+...
+033 (1238.000.000) 05/12 10:33:01 Setting job attribute SocketServer to ' 5011'
+...
+015 (1238.000.000) 05/12 10:33:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22900  -  Run Bytes Sent By Node
+	15884  -  Run Bytes Received By Node
+	22900  -  Total Bytes Sent By Node
+	15884  -  Total Bytes Received By Node
+...
+015 (1238.000.001) 05/12 10:33:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22703  -  Run Bytes Sent By Node
+	15884  -  Run Bytes Received By Node
+	22703  -  Total Bytes Sent By Node
+	15884  -  Total Bytes Received By Node
+...
+005 (1238.000.000) 05/12 10:33:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45603  -  Run Bytes Sent By Job
+	31768  -  Run Bytes Received By Job
+	45603  -  Total Bytes Sent By Job
+	31768  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062944
+	   Memory (MB)          :        0        1      3183
+...
+000 (1239.000.000) 05/12 10:37:59 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1239.000.000) 05/12 10:38:05 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1239.000.001) 05/12 10:38:09 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1239.000.000) 05/12 10:38:09 Job executing on host: MPI_job
+...
+033 (1239.000.000) 05/12 10:38:11 Setting job attribute SocketServer to ' 5011'
+...
+015 (1239.000.000) 05/12 10:38:16 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22949  -  Run Bytes Sent By Node
+	15925  -  Run Bytes Received By Node
+	22949  -  Total Bytes Sent By Node
+	15925  -  Total Bytes Received By Node
+...
+015 (1239.000.001) 05/12 10:38:19 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22743  -  Run Bytes Sent By Node
+	15925  -  Run Bytes Received By Node
+	22743  -  Total Bytes Sent By Node
+	15925  -  Total Bytes Received By Node
+...
+005 (1239.000.000) 05/12 10:38:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45692  -  Run Bytes Sent By Job
+	31850  -  Run Bytes Received By Job
+	45692  -  Total Bytes Sent By Job
+	31850  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062924
+	   Memory (MB)          :        0        1      3183
+...
+000 (1240.000.000) 05/12 10:45:21 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1240.000.000) 05/12 10:45:29 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1240.000.001) 05/12 10:45:32 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1240.000.000) 05/12 10:45:32 Job executing on host: MPI_job
+...
+033 (1240.000.000) 05/12 10:45:34 Setting job attribute SocketServer to ' 5011'
+...
+015 (1240.000.000) 05/12 10:45:39 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23047  -  Run Bytes Sent By Node
+	16003  -  Run Bytes Received By Node
+	23047  -  Total Bytes Sent By Node
+	16003  -  Total Bytes Received By Node
+...
+015 (1240.000.001) 05/12 10:45:42 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22862  -  Run Bytes Sent By Node
+	16003  -  Run Bytes Received By Node
+	22862  -  Total Bytes Sent By Node
+	16003  -  Total Bytes Received By Node
+...
+005 (1240.000.000) 05/12 10:45:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45909  -  Run Bytes Sent By Job
+	32006  -  Run Bytes Received By Job
+	45909  -  Total Bytes Sent By Job
+	32006  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062916
+	   Memory (MB)          :        0        1      3183
+...
+000 (1241.000.000) 05/12 10:52:24 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1241.000.000) 05/12 10:52:49 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1241.000.001) 05/12 10:52:52 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1241.000.000) 05/12 10:52:52 Job executing on host: MPI_job
+...
+033 (1241.000.000) 05/12 10:52:55 Setting job attribute SocketServer to ' 5011'
+...
+015 (1241.000.000) 05/12 10:53:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23115  -  Run Bytes Sent By Node
+	16086  -  Run Bytes Received By Node
+	23115  -  Total Bytes Sent By Node
+	16086  -  Total Bytes Received By Node
+...
+015 (1241.000.001) 05/12 10:53:02 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23644  -  Run Bytes Sent By Node
+	16086  -  Run Bytes Received By Node
+	23644  -  Total Bytes Sent By Node
+	16086  -  Total Bytes Received By Node
+...
+005 (1241.000.000) 05/12 10:53:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46759  -  Run Bytes Sent By Job
+	32172  -  Run Bytes Received By Job
+	46759  -  Total Bytes Sent By Job
+	32172  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062975
+	   Memory (MB)          :        0        1      3183
+...
+000 (1242.000.000) 05/12 10:57:41 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1242.000.000) 05/12 10:57:50 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1242.000.001) 05/12 10:57:53 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1242.000.000) 05/12 10:57:53 Job executing on host: MPI_job
+...
+033 (1242.000.000) 05/12 10:57:55 Setting job attribute SocketServer to ' 5011'
+...
+015 (1242.000.000) 05/12 10:58:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22999  -  Run Bytes Sent By Node
+	16100  -  Run Bytes Received By Node
+	22999  -  Total Bytes Sent By Node
+	16100  -  Total Bytes Received By Node
+...
+015 (1242.000.001) 05/12 10:58:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23677  -  Run Bytes Sent By Node
+	16100  -  Run Bytes Received By Node
+	23677  -  Total Bytes Sent By Node
+	16100  -  Total Bytes Received By Node
+...
+005 (1242.000.000) 05/12 10:58:04 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46676  -  Run Bytes Sent By Job
+	32200  -  Run Bytes Received By Job
+	46676  -  Total Bytes Sent By Job
+	32200  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062984
+	   Memory (MB)          :        0        1      3183
+...
+000 (1243.000.000) 05/12 11:00:01 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1243.000.000) 05/12 11:00:09 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1243.000.001) 05/12 11:00:12 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1243.000.000) 05/12 11:00:12 Job executing on host: MPI_job
+...
+033 (1243.000.000) 05/12 11:00:15 Setting job attribute SocketServer to ' 5011'
+...
+015 (1243.000.000) 05/12 11:00:42 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1519719  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	1519719  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+015 (1243.000.001) 05/12 11:00:45 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23646  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23646  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+005 (1243.000.000) 05/12 11:00:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1543365  -  Run Bytes Sent By Job
+	32202  -  Run Bytes Received By Job
+	1543365  -  Total Bytes Sent By Job
+	32202  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :     1511       20 168062971
+	   Memory (MB)          :        0        1      3183
+...
+000 (1244.000.000) 05/12 11:11:25 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1244.000.000) 05/12 12:30:13 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1244.000.001) 05/12 12:30:16 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1244.000.000) 05/12 12:30:16 Job executing on host: MPI_job
+...
+033 (1244.000.000) 05/12 12:30:18 Setting job attribute SocketServer to ' 5011'
+...
+015 (1244.000.000) 05/12 12:30:23 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23123  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23123  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+015 (1244.000.001) 05/12 12:30:26 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23582  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23582  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+005 (1244.000.000) 05/12 12:30:27 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46705  -  Run Bytes Sent By Job
+	32202  -  Run Bytes Received By Job
+	46705  -  Total Bytes Sent By Job
+	32202  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062852
+	   Memory (MB)          :        0        1      3183
+...
+000 (1245.000.000) 05/12 14:21:30 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1245.000.000) 05/12 14:21:48 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1245.000.001) 05/12 14:21:51 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1245.000.000) 05/12 14:21:51 Job executing on host: MPI_job
+...
+033 (1245.000.000) 05/12 14:21:53 Setting job attribute SocketServer to ' 5011'
+...
+015 (1245.000.000) 05/12 14:22:14 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1519826  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	1519826  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+015 (1245.000.001) 05/12 14:22:17 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23203  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23203  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+005 (1245.000.000) 05/12 14:22:17 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1543029  -  Run Bytes Sent By Job
+	32202  -  Run Bytes Received By Job
+	1543029  -  Total Bytes Sent By Job
+	32202  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :     1511       20 168062734
+	   Memory (MB)          :        0        1      3183
+...
+000 (1246.000.000) 05/12 14:28:29 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1246.000.000) 05/12 14:28:36 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1246.000.001) 05/12 14:28:39 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1246.000.000) 05/12 14:28:39 Job executing on host: MPI_job
+...
+033 (1246.000.000) 05/12 14:28:41 Setting job attribute SocketServer to ' 5011'
+...
+015 (1246.000.000) 05/12 14:28:46 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23123  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23123  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+015 (1246.000.001) 05/12 14:28:49 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23652  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23652  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+005 (1246.000.000) 05/12 14:28:50 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46775  -  Run Bytes Sent By Job
+	32202  -  Run Bytes Received By Job
+	46775  -  Total Bytes Sent By Job
+	32202  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062132
+	   Memory (MB)          :        0        1      3183
+...
+000 (1247.000.000) 05/12 14:29:30 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1247.000.000) 05/12 14:29:37 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1247.000.001) 05/12 14:29:40 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1247.000.000) 05/12 14:29:40 Job executing on host: MPI_job
+...
+033 (1247.000.000) 05/12 14:29:42 Setting job attribute SocketServer to ' 5011'
+...
+015 (1247.000.000) 05/12 14:30:12 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1582695  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	1582695  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+015 (1247.000.001) 05/12 14:30:15 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23233  -  Run Bytes Sent By Node
+	16101  -  Run Bytes Received By Node
+	23233  -  Total Bytes Sent By Node
+	16101  -  Total Bytes Received By Node
+...
+005 (1247.000.000) 05/12 14:30:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1605928  -  Run Bytes Sent By Job
+	32202  -  Run Bytes Received By Job
+	1605928  -  Total Bytes Sent By Job
+	32202  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :     1572       20 168062692
+	   Memory (MB)          :        0        1      3183
+...
+000 (1248.000.000) 05/12 14:39:29 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1248.000.000) 05/12 14:39:37 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1248.000.001) 05/12 14:39:40 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1248.000.000) 05/12 14:39:40 Job executing on host: MPI_job
+...
+015 (1248.000.001) 05/12 14:39:44 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23352  -  Run Bytes Sent By Node
+	16094  -  Run Bytes Received By Node
+	23352  -  Total Bytes Sent By Node
+	16094  -  Total Bytes Received By Node
+...
+015 (1248.000.000) 05/12 14:41:38 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22992  -  Run Bytes Sent By Node
+	16094  -  Run Bytes Received By Node
+	22992  -  Total Bytes Sent By Node
+	16094  -  Total Bytes Received By Node
+...
+005 (1248.000.000) 05/12 14:41:40 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46344  -  Run Bytes Sent By Job
+	32188  -  Run Bytes Received By Job
+	46344  -  Total Bytes Sent By Job
+	32188  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062095
+	   Memory (MB)          :        0        1      3183
+...
+000 (1249.000.000) 05/12 14:51:32 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1249.000.000) 05/12 14:52:28 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1249.000.001) 05/12 14:52:31 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1249.000.000) 05/12 14:52:31 Job executing on host: MPI_job
+...
+015 (1249.000.001) 05/12 14:52:35 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23352  -  Run Bytes Sent By Node
+	16095  -  Run Bytes Received By Node
+	23352  -  Total Bytes Sent By Node
+	16095  -  Total Bytes Received By Node
+...
+015 (1249.000.000) 05/12 14:54:29 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22992  -  Run Bytes Sent By Node
+	16095  -  Run Bytes Received By Node
+	22992  -  Total Bytes Sent By Node
+	16095  -  Total Bytes Received By Node
+...
+005 (1249.000.000) 05/12 14:54:30 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46344  -  Run Bytes Sent By Job
+	32190  -  Run Bytes Received By Job
+	46344  -  Total Bytes Sent By Job
+	32190  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062682
+	   Memory (MB)          :        0        1      3183
+...
+000 (1250.000.000) 05/12 14:57:52 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1250.000.000) 05/12 14:57:58 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1250.000.001) 05/12 14:58:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1250.000.000) 05/12 14:58:01 Job executing on host: MPI_job
+...
+015 (1250.000.001) 05/12 14:58:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23352  -  Run Bytes Sent By Node
+	16094  -  Run Bytes Received By Node
+	23352  -  Total Bytes Sent By Node
+	16094  -  Total Bytes Received By Node
+...
+015 (1250.000.000) 05/12 14:59:58 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22992  -  Run Bytes Sent By Node
+	16094  -  Run Bytes Received By Node
+	22992  -  Total Bytes Sent By Node
+	16094  -  Total Bytes Received By Node
+...
+005 (1250.000.000) 05/12 14:59:59 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46344  -  Run Bytes Sent By Job
+	32188  -  Run Bytes Received By Job
+	46344  -  Total Bytes Sent By Job
+	32188  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062668
+	   Memory (MB)          :        0        1      3183
+...
+000 (1251.000.000) 05/12 15:01:42 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1251.000.000) 05/12 15:01:50 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1251.000.001) 05/12 15:01:53 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1251.000.000) 05/12 15:01:53 Job executing on host: MPI_job
+...
+015 (1251.000.001) 05/12 15:01:57 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23352  -  Run Bytes Sent By Node
+	16094  -  Run Bytes Received By Node
+	23352  -  Total Bytes Sent By Node
+	16094  -  Total Bytes Received By Node
+...
+015 (1251.000.000) 05/12 15:03:50 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22992  -  Run Bytes Sent By Node
+	16094  -  Run Bytes Received By Node
+	22992  -  Total Bytes Sent By Node
+	16094  -  Total Bytes Received By Node
+...
+005 (1251.000.000) 05/12 15:03:52 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46344  -  Run Bytes Sent By Job
+	32188  -  Run Bytes Received By Job
+	46344  -  Total Bytes Sent By Job
+	32188  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062653
+	   Memory (MB)          :        0        1      3183
+...
+000 (1252.000.000) 05/12 15:05:26 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1252.000.000) 05/12 15:05:34 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1252.000.000) 05/12 15:05:35 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	115  -  Run Bytes Sent By Node
+	16102  -  Run Bytes Received By Node
+	115  -  Total Bytes Sent By Node
+	16102  -  Total Bytes Received By Node
+...
+014 (1252.000.001) 05/12 15:05:38 Node 1 executing on host: <128.104.153.60:39772>
+...
+015 (1252.000.001) 05/12 15:05:39 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	115  -  Run Bytes Sent By Node
+	16102  -  Run Bytes Received By Node
+	115  -  Total Bytes Sent By Node
+	16102  -  Total Bytes Received By Node
+...
+005 (1252.000.000) 05/12 15:05:40 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	230  -  Run Bytes Sent By Job
+	32204  -  Run Bytes Received By Job
+	230  -  Total Bytes Sent By Job
+	32204  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       27       20 168062596
+	   Memory (MB)          :        0        1      3183
+...
+000 (1253.000.000) 05/12 15:08:28 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1253.000.000) 05/12 15:08:35 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1253.000.001) 05/12 15:08:38 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1253.000.000) 05/12 15:08:38 Job executing on host: MPI_job
+...
+015 (1253.000.001) 05/12 15:08:41 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22938  -  Run Bytes Sent By Node
+	16084  -  Run Bytes Received By Node
+	22938  -  Total Bytes Sent By Node
+	16084  -  Total Bytes Received By Node
+...
+004 (1253.000.000) 05/12 15:11:10 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	22938  -  Run Bytes Sent By Job
+	32168  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062599
+	   Memory (MB)          :        0        1      3183
+...
+009 (1253.000.000) 05/12 15:11:10 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1254.000.000) 05/12 15:12:43 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1254.000.000) 05/12 15:13:06 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1254.000.001) 05/12 15:13:09 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1254.000.000) 05/12 15:13:09 Job executing on host: MPI_job
+...
+033 (1254.000.000) 05/12 15:13:11 Setting job attribute SocketServer to ' 5011'
+...
+015 (1254.000.000) 05/12 15:13:36 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1583111  -  Run Bytes Sent By Node
+	16084  -  Run Bytes Received By Node
+	1583111  -  Total Bytes Sent By Node
+	16084  -  Total Bytes Received By Node
+...
+015 (1254.000.001) 05/12 15:13:38 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23233  -  Run Bytes Sent By Node
+	16084  -  Run Bytes Received By Node
+	23233  -  Total Bytes Sent By Node
+	16084  -  Total Bytes Received By Node
+...
+005 (1254.000.000) 05/12 15:13:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1606344  -  Run Bytes Sent By Job
+	32168  -  Run Bytes Received By Job
+	1606344  -  Total Bytes Sent By Job
+	32168  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :     1572       20 168062585
+	   Memory (MB)          :        0        1      3183
+...
+000 (1255.000.000) 05/12 15:23:59 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1255.000.000) 05/12 15:24:36 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1255.000.001) 05/12 15:25:08 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1255.000.000) 05/12 15:25:08 Job executing on host: MPI_job
+...
+033 (1255.000.000) 05/12 15:25:10 Setting job attribute SocketServer to ' 5011'
+...
+015 (1255.000.000) 05/12 15:25:12 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22783  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22783  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+015 (1255.000.001) 05/12 15:25:15 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22749  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22749  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+005 (1255.000.000) 05/12 15:25:16 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45532  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	45532  -  Total Bytes Sent By Job
+	32160  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168061956
+	   Memory (MB)          :        0        1      3183
+...
+000 (1256.000.000) 05/12 15:59:32 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1256.000.000) 05/12 16:03:22 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1256.000.000) 05/12 16:03:30 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22783  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22783  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+007 (1256.000.000) 05/12 16:05:04 Shadow exception!
+	Error from slot3@komatsu.chtc.wisc.edu: Failed to transfer files
+	22783  -  Run Bytes Sent By Job
+	22106  -  Run Bytes Received By Job
+...
+014 (1256.000.000) 05/12 16:23:59 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1256.000.001) 05/12 16:24:11 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1256.000.000) 05/12 16:24:11 Job executing on host: MPI_job
+...
+033 (1256.000.000) 05/12 16:24:13 Setting job attribute SocketServer to ' 5011'
+...
+015 (1256.000.000) 05/12 16:24:40 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22717  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22717  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+015 (1256.000.001) 05/12 16:24:43 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22749  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22749  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+005 (1256.000.000) 05/12 16:24:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45466  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	68249  -  Total Bytes Sent By Job
+	54266  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       50       50 168062493
+	   Memory (MB)          :        0        0      3183
+...
+000 (1257.000.000) 05/12 18:57:02 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1257.000.000) 05/12 18:58:09 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1257.000.001) 05/12 18:58:12 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1257.000.000) 05/12 18:58:13 Job executing on host: MPI_job
+...
+033 (1257.000.000) 05/12 18:58:15 Setting job attribute SocketServer to ' 5011'
+...
+015 (1257.000.000) 05/12 18:58:46 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22783  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22783  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+015 (1257.000.001) 05/12 18:58:49 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22617  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22617  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+005 (1257.000.000) 05/12 18:58:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45400  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	45400  -  Total Bytes Sent By Job
+	32160  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062488
+	   Memory (MB)          :        0        1      3183
+...
+000 (1258.000.000) 05/12 19:09:48 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1258.000.000) 05/12 19:10:23 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1258.000.001) 05/12 19:10:26 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1258.000.000) 05/12 19:10:26 Job executing on host: MPI_job
+...
+033 (1258.000.000) 05/12 19:10:28 Setting job attribute SocketServer to ' 5011'
+...
+015 (1258.000.000) 05/12 19:11:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22747  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22747  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+015 (1258.000.001) 05/12 19:11:03 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22713  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22713  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+005 (1258.000.000) 05/12 19:11:04 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45460  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	45460  -  Total Bytes Sent By Job
+	32160  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168062171
+	   Memory (MB)          :        0        1      3183
+...
+000 (1259.000.000) 05/12 19:14:20 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1259.000.000) 05/12 19:30:25 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1259.000.001) 05/12 19:30:28 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1259.000.000) 05/12 19:30:28 Job executing on host: MPI_job
+...
+033 (1259.000.000) 05/12 19:30:31 Setting job attribute SocketServer to ' 5011'
+...
+015 (1259.000.000) 05/12 19:30:36 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22747  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22747  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+015 (1259.000.001) 05/12 19:30:40 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22713  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22713  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+004 (1259.000.000) 05/12 19:30:40 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	45460  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1259.000.000) 05/12 20:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1259.000.001) 05/12 20:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1259.000.000) 05/12 20:00:00 Job executing on host: MPI_job
+...
+015 (1259.000.000) 05/12 20:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22813  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22813  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+033 (1259.000.000) 05/12 20:00:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1259.000.001) 05/12 20:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22912  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22912  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+004 (1259.000.000) 05/12 20:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	45725  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1259.000.000) 05/12 20:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1259.000.001) 05/12 20:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1259.000.000) 05/12 20:30:00 Job executing on host: MPI_job
+...
+015 (1259.000.000) 05/12 20:30:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22813  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22813  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+033 (1259.000.000) 05/12 20:30:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1259.000.001) 05/12 20:32:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22912  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22912  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+004 (1259.000.000) 05/12 20:32:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	45725  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1259.000.000) 05/12 21:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1259.000.001) 05/12 21:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1259.000.000) 05/12 21:00:00 Job executing on host: MPI_job
+...
+015 (1259.000.000) 05/12 21:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22813  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22813  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+033 (1259.000.000) 05/12 21:00:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1259.000.001) 05/12 21:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22912  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22912  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+004 (1259.000.000) 05/12 21:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	45725  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1259.000.000) 05/12 21:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1259.000.001) 05/12 21:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1259.000.000) 05/12 21:30:00 Job executing on host: MPI_job
+...
+015 (1259.000.000) 05/12 21:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22813  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22813  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+033 (1259.000.000) 05/12 21:30:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1259.000.001) 05/12 21:32:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22912  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22912  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+004 (1259.000.000) 05/12 21:32:05 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	45725  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1259.000.000) 05/12 22:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1259.000.001) 05/12 22:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1259.000.000) 05/12 22:00:00 Job executing on host: MPI_job
+...
+015 (1259.000.000) 05/12 22:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22747  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22747  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+033 (1259.000.000) 05/12 22:00:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1259.000.001) 05/12 22:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22979  -  Run Bytes Sent By Node
+	16080  -  Run Bytes Received By Node
+	22979  -  Total Bytes Sent By Node
+	16080  -  Total Bytes Received By Node
+...
+004 (1259.000.000) 05/12 22:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	45726  -  Run Bytes Sent By Job
+	32160  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+009 (1259.000.000) 05/12 22:14:14 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1260.000.000) 05/12 22:15:07 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1260.000.000) 05/12 22:16:02 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1260.000.001) 05/12 22:16:05 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1260.000.000) 05/12 22:16:05 Job executing on host: MPI_job
+...
+033 (1260.000.000) 05/12 22:16:08 Setting job attribute SocketServer to ' 5011'
+...
+015 (1260.000.000) 05/12 22:16:14 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22985  -  Run Bytes Sent By Node
+	16421  -  Run Bytes Received By Node
+	22985  -  Total Bytes Sent By Node
+	16421  -  Total Bytes Received By Node
+...
+015 (1260.000.001) 05/12 22:16:16 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23020  -  Run Bytes Sent By Node
+	16421  -  Run Bytes Received By Node
+	23020  -  Total Bytes Sent By Node
+	16421  -  Total Bytes Received By Node
+...
+005 (1260.000.000) 05/12 22:16:17 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46005  -  Run Bytes Sent By Job
+	32842  -  Run Bytes Received By Job
+	46005  -  Total Bytes Sent By Job
+	32842  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168061611
+	   Memory (MB)          :        0        1      3183
+...
+000 (1261.000.000) 05/12 22:18:01 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1261.000.000) 05/12 22:18:06 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1261.000.001) 05/12 22:18:09 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1261.000.000) 05/12 22:18:10 Job executing on host: MPI_job
+...
+033 (1261.000.000) 05/12 22:18:12 Setting job attribute SocketServer to ' 5011'
+...
+015 (1261.000.000) 05/12 22:18:17 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23006  -  Run Bytes Sent By Node
+	16425  -  Run Bytes Received By Node
+	23006  -  Total Bytes Sent By Node
+	16425  -  Total Bytes Received By Node
+...
+015 (1261.000.001) 05/12 22:18:21 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23039  -  Run Bytes Sent By Node
+	16425  -  Run Bytes Received By Node
+	23039  -  Total Bytes Sent By Node
+	16425  -  Total Bytes Received By Node
+...
+005 (1261.000.000) 05/12 22:18:21 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46045  -  Run Bytes Sent By Job
+	32850  -  Run Bytes Received By Job
+	46045  -  Total Bytes Sent By Job
+	32850  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168061600
+	   Memory (MB)          :        0        1      3183
+...
+000 (1262.000.000) 05/12 22:20:05 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1262.000.000) 05/12 22:20:13 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1262.000.001) 05/12 22:20:16 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1262.000.000) 05/12 22:20:16 Job executing on host: MPI_job
+...
+033 (1262.000.000) 05/12 22:20:19 Setting job attribute SocketServer to ' 5011'
+...
+015 (1262.000.000) 05/12 22:20:24 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23333  -  Run Bytes Sent By Node
+	16422  -  Run Bytes Received By Node
+	23333  -  Total Bytes Sent By Node
+	16422  -  Total Bytes Received By Node
+...
+015 (1262.000.001) 05/12 22:20:27 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23454  -  Run Bytes Sent By Node
+	16422  -  Run Bytes Received By Node
+	23454  -  Total Bytes Sent By Node
+	16422  -  Total Bytes Received By Node
+...
+005 (1262.000.000) 05/12 22:20:28 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46787  -  Run Bytes Sent By Job
+	32844  -  Run Bytes Received By Job
+	46787  -  Total Bytes Sent By Job
+	32844  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       50       20 168061585
+	   Memory (MB)          :        0        1      3183
+...
+000 (1263.000.000) 05/12 22:22:33 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1263.000.000) 05/12 22:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1263.000.001) 05/12 22:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1263.000.000) 05/12 22:30:00 Job executing on host: MPI_job
+...
+033 (1263.000.000) 05/12 22:30:03 Setting job attribute SocketServer to ' 5011'
+...
+015 (1263.000.000) 05/12 22:30:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23333  -  Run Bytes Sent By Node
+	16422  -  Run Bytes Received By Node
+	23333  -  Total Bytes Sent By Node
+	16422  -  Total Bytes Received By Node
+...
+015 (1263.000.001) 05/12 22:30:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23454  -  Run Bytes Sent By Node
+	16422  -  Run Bytes Received By Node
+	23454  -  Total Bytes Sent By Node
+	16422  -  Total Bytes Received By Node
+...
+004 (1263.000.000) 05/12 22:30:09 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46787  -  Run Bytes Sent By Job
+	32844  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1263.000.000) 05/12 23:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1263.000.000) 05/12 23:00:00 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	121  -  Run Bytes Sent By Node
+	16532  -  Run Bytes Received By Node
+	121  -  Total Bytes Sent By Node
+	16532  -  Total Bytes Received By Node
+...
+014 (1263.000.001) 05/12 23:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+015 (1263.000.001) 05/12 23:00:02 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	121  -  Run Bytes Sent By Node
+	16532  -  Run Bytes Received By Node
+	121  -  Total Bytes Sent By Node
+	16532  -  Total Bytes Received By Node
+...
+004 (1263.000.000) 05/12 23:00:02 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	242  -  Run Bytes Sent By Job
+	33064  -  Run Bytes Received By Job
+	(1) Normal termination (return value 1)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+000 (1264.000.000) 05/12 23:03:35 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1264.000.000) 05/12 23:03:55 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1264.000.000) 05/12 23:03:56 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22809  -  Run Bytes Sent By Node
+	16394  -  Run Bytes Received By Node
+	22809  -  Total Bytes Sent By Node
+	16394  -  Total Bytes Received By Node
+...
+014 (1264.000.001) 05/12 23:03:58 Node 1 executing on host: <128.104.153.60:39772>
+...
+015 (1264.000.001) 05/12 23:04:02 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22809  -  Run Bytes Sent By Node
+	16394  -  Run Bytes Received By Node
+	22809  -  Total Bytes Sent By Node
+	16394  -  Total Bytes Received By Node
+...
+005 (1264.000.000) 05/12 23:04:02 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45618  -  Run Bytes Sent By Job
+	32788  -  Run Bytes Received By Job
+	45618  -  Total Bytes Sent By Job
+	32788  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168061512
+	   Memory (MB)          :        0        1      3183
+...
+000 (1265.000.000) 05/12 23:05:19 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1265.000.000) 05/12 23:05:27 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1265.000.001) 05/12 23:05:30 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1265.000.000) 05/12 23:05:30 Job executing on host: MPI_job
+...
+033 (1265.000.000) 05/12 23:05:33 Setting job attribute SocketServer to ' 5011'
+...
+015 (1265.000.000) 05/12 23:05:38 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23363  -  Run Bytes Sent By Node
+	16399  -  Run Bytes Received By Node
+	23363  -  Total Bytes Sent By Node
+	16399  -  Total Bytes Received By Node
+...
+015 (1265.000.001) 05/12 23:05:41 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23413  -  Run Bytes Sent By Node
+	16399  -  Run Bytes Received By Node
+	23413  -  Total Bytes Sent By Node
+	16399  -  Total Bytes Received By Node
+...
+005 (1265.000.000) 05/12 23:05:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	46776  -  Run Bytes Sent By Job
+	32798  -  Run Bytes Received By Job
+	46776  -  Total Bytes Sent By Job
+	32798  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       50       20 168061489
+	   Memory (MB)          :        0        1      3183
+...
+014 (1263.000.000) 05/12 23:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1263.000.001) 05/12 23:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1263.000.000) 05/12 23:30:00 Job executing on host: MPI_job
+...
+015 (1263.000.000) 05/12 23:30:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1263.000.000) 05/12 23:30:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1263.000.001) 05/12 23:32:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1263.000.000) 05/12 23:32:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+009 (1263.000.000) 05/12 23:33:35 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1266.000.000) 05/12 23:33:49 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1266.000.000) 05/13 00:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 00:00:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 00:00:01 Job executing on host: MPI_job
+...
+033 (1266.000.000) 05/13 00:00:03 Setting job attribute SocketServer to ' 5011'
+...
+015 (1266.000.000) 05/13 00:00:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26551  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	26551  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+015 (1266.000.001) 05/13 00:00:10 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23436  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23436  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 00:00:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	49987  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.001) 05/13 01:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1266.000.000) 05/13 01:30:01 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1266.000.000) 05/13 01:30:01 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 01:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26551  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	26551  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+015 (1266.000.001) 05/13 01:30:05 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23423  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23423  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 01:30:06 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	49974  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 02:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 02:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 02:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 02:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 02:00:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 02:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 02:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.001) 05/13 02:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1266.000.000) 05/13 02:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1266.000.000) 05/13 02:30:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 02:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26538  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	26538  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+015 (1266.000.001) 05/13 02:30:04 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23422  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23422  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 02:30:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	49960  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 03:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 03:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 03:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 03:00:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 03:00:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 03:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 03:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 04:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 04:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 04:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 04:00:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 04:00:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 04:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 04:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 04:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 04:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 04:30:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 04:30:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 04:30:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 04:32:09 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 04:32:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 05:30:01 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1266.000.000) 05/13 05:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+014 (1266.000.001) 05/13 05:30:04 Node 1 executing on host: <128.104.153.60:39772>
+...
+033 (1266.000.000) 05/13 05:30:06 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 05:32:07 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23101  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23101  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 05:32:08 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46311  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 06:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 06:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 06:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 06:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23144  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23144  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 06:00:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 06:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23101  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23101  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 06:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46245  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 06:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 06:30:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 06:30:01 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 06:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23144  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23144  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 06:30:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 06:32:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23101  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23101  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 06:32:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46245  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 07:00:52 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1266.000.000) 05/13 07:00:53 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+014 (1266.000.001) 05/13 07:00:55 Node 1 executing on host: <128.104.153.60:39772>
+...
+033 (1266.000.000) 05/13 07:00:58 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 07:02:58 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23101  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23101  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 07:02:59 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46311  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 07:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 07:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 07:30:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 07:30:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 07:30:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 07:32:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23101  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23101  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 07:32:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46311  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 08:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 08:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 08:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 08:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 08:00:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 08:02:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 08:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.001) 05/13 08:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1266.000.000) 05/13 08:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1266.000.000) 05/13 08:30:01 Job executing on host: MPI_job
+...
+033 (1266.000.000) 05/13 08:30:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.000) 05/13 08:30:02 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	39106  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	39106  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+015 (1266.000.001) 05/13 08:30:05 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23424  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23424  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 08:30:06 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	62530  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 09:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 09:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 09:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 09:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23144  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23144  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 09:00:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 09:02:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 09:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46312  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 09:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 09:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 09:30:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 09:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 09:30:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 09:32:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 09:32:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 10:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 10:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 10:00:00 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 10:00:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23210  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23210  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 10:00:02 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 10:02:03 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23168  -  Run Bytes Sent By Node
+	16417  -  Run Bytes Received By Node
+	23168  -  Total Bytes Sent By Node
+	16417  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 10:02:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46378  -  Run Bytes Sent By Job
+	32834  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1266.000.000) 05/13 10:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1266.000.001) 05/13 10:30:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1266.000.000) 05/13 10:30:01 Job executing on host: MPI_job
+...
+015 (1266.000.000) 05/13 10:30:01 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23219  -  Run Bytes Sent By Node
+	16399  -  Run Bytes Received By Node
+	23219  -  Total Bytes Sent By Node
+	16399  -  Total Bytes Received By Node
+...
+033 (1266.000.000) 05/13 10:30:03 Changing job attribute SocketServer from ' 5011' to ' 5011'
+...
+015 (1266.000.001) 05/13 10:32:04 Node 1 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23083  -  Run Bytes Sent By Node
+	16399  -  Run Bytes Received By Node
+	23083  -  Total Bytes Sent By Node
+	16399  -  Total Bytes Received By Node
+...
+004 (1266.000.000) 05/13 10:32:04 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46302  -  Run Bytes Sent By Job
+	32798  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+009 (1266.000.000) 05/13 10:39:34 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1267.000.000) 05/13 10:40:37 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1267.000.001) 05/13 10:50:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1267.000.000) 05/13 10:50:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1267.000.000) 05/13 10:50:00 Job executing on host: MPI_job
+...
+015 (1267.000.000) 05/13 10:50:00 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22877  -  Run Bytes Sent By Node
+	16410  -  Run Bytes Received By Node
+	22877  -  Total Bytes Sent By Node
+	16410  -  Total Bytes Received By Node
+...
+033 (1267.000.000) 05/13 10:50:02 Setting job attribute SocketServer to ' 5011'
+...
+004 (1267.000.000) 05/13 10:50:14 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	22877  -  Run Bytes Sent By Job
+	32820  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168051439
+	   Memory (MB)          :        0        1      3183
+...
+009 (1267.000.000) 05/13 10:50:14 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1268.000.000) 05/13 10:56:29 Job submitted from host: <115.25.138.244:42830>
+...
+004 (1268.000.000) 05/13 10:58:50 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	32820  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       27       20 168051463
+	   Memory (MB)          :                 1      3183
+...
+009 (1268.000.000) 05/13 10:58:50 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1269.000.000) 05/13 10:58:56 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1269.000.000) 05/13 10:59:03 Node 0 executing on host: <115.25.138.244:48471>
+...
+015 (1269.000.000) 05/13 10:59:03 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	22877  -  Run Bytes Sent By Node
+	16410  -  Run Bytes Received By Node
+	22877  -  Total Bytes Sent By Node
+	16410  -  Total Bytes Received By Node
+...
+014 (1269.000.001) 05/13 10:59:06 Node 1 executing on host: <128.104.153.60:39772>
+...
+033 (1269.000.000) 05/13 10:59:09 Setting job attribute SocketServer to ' 5011'
+...
+004 (1269.000.000) 05/13 11:28:14 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	22877  -  Run Bytes Sent By Job
+	32820  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       49       20 168051493
+	   Memory (MB)          :        0        1      3183
+...
+009 (1269.000.000) 05/13 11:28:14 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1270.000.000) 05/13 11:30:56 Job submitted from host: <115.25.138.244:42830>
+...
+009 (1270.000.000) 05/13 11:31:49 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1271.000.000) 05/13 11:32:09 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1271.000.000) 05/13 11:32:16 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1271.000.001) 05/13 11:32:19 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1271.000.000) 05/13 11:32:19 Job executing on host: MPI_job
+...
+033 (1271.000.000) 05/13 11:32:21 Setting job attribute SocketServer to ' 5011'
+...
+015 (1271.000.000) 05/13 11:32:26 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23484  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	23484  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+004 (1271.000.000) 05/13 11:33:53 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	23484  -  Run Bytes Sent By Job
+	32816  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       50       20 168051619
+	   Memory (MB)          :        0        1      3183
+...
+009 (1271.000.000) 05/13 11:33:53 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1272.000.000) 05/13 11:34:01 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1272.000.000) 05/13 11:34:08 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1272.000.001) 05/13 11:34:11 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1272.000.000) 05/13 11:34:11 Job executing on host: MPI_job
+...
+033 (1272.000.000) 05/13 11:34:14 Setting job attribute SocketServer to ' 5012'
+...
+015 (1272.000.000) 05/13 11:34:19 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	32829  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	32829  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+015 (1272.000.001) 05/13 11:34:23 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23404  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	23404  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+005 (1272.000.000) 05/13 11:34:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	56233  -  Run Bytes Sent By Job
+	32816  -  Run Bytes Received By Job
+	56233  -  Total Bytes Sent By Job
+	32816  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       59       20 168051624
+	   Memory (MB)          :        0        1      3183
+...
+000 (1273.000.000) 05/13 14:35:38 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1273.000.001) 05/13 15:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1273.000.000) 05/13 15:00:01 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1273.000.000) 05/13 15:00:01 Job executing on host: MPI_job
+...
+033 (1273.000.000) 05/13 15:00:02 Setting job attribute SocketServer to ' 5012'
+...
+015 (1273.000.000) 05/13 15:00:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	29729  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	29729  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+015 (1273.000.001) 05/13 15:00:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23404  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	23404  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+004 (1273.000.000) 05/13 15:00:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	53133  -  Run Bytes Sent By Job
+	32816  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1273.000.000) 05/13 15:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1273.000.001) 05/13 15:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1273.000.000) 05/13 15:30:00 Job executing on host: MPI_job
+...
+015 (1273.000.000) 05/13 15:30:00 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23552  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	23552  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+033 (1273.000.000) 05/13 15:30:03 Changing job attribute SocketServer from ' 5012' to ' 5012'
+...
+004 (1273.000.000) 05/13 15:48:43 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	23552  -  Run Bytes Sent By Job
+	32816  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       51       75 168051380
+	   Memory (MB)          :        0        0      3183
+...
+009 (1273.000.000) 05/13 15:48:43 Job was aborted by the user.
+	via condor_rm (by user kunq)
+...
+000 (1274.000.000) 05/13 15:52:24 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1274.000.001) 05/13 16:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1274.000.000) 05/13 16:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1274.000.000) 05/13 16:00:00 Job executing on host: MPI_job
+...
+033 (1274.000.000) 05/13 16:00:02 Setting job attribute SocketServer to ' 5022'
+...
+015 (1274.000.000) 05/13 16:00:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26550  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	26550  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+015 (1274.000.001) 05/13 16:00:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23338  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	23338  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+004 (1274.000.000) 05/13 16:00:09 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	49888  -  Run Bytes Sent By Job
+	32816  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1274.000.000) 05/13 16:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1274.000.001) 05/13 16:30:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1274.000.000) 05/13 16:30:01 Job executing on host: MPI_job
+...
+015 (1274.000.000) 05/13 16:30:01 Node 0 terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23484  -  Run Bytes Sent By Node
+	16408  -  Run Bytes Received By Node
+	23484  -  Total Bytes Sent By Node
+	16408  -  Total Bytes Received By Node
+...
+033 (1274.000.000) 05/13 16:30:03 Changing job attribute SocketServer from ' 5022' to ' 5022'
+...
+004 (1274.000.000) 05/13 16:43:58 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	23484  -  Run Bytes Sent By Job
+	32816  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       51       75 168051280
+	   Memory (MB)          :        0        0      3183
+...
+009 (1274.000.000) 05/13 16:43:58 Job was aborted by the user.
+	via condor_rm (by user condor)
+...
+000 (1275.000.000) 05/13 17:01:53 Job submitted from host: <115.25.138.244:42830>
+...
+014 (1275.000.000) 05/13 17:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1275.000.001) 05/13 17:30:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1275.000.000) 05/13 17:30:01 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 17:30:03 Setting job attribute SocketServer to ' 5022'
+...
+015 (1275.000.000) 05/13 17:30:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	29764  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	29764  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 17:30:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 17:30:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23386  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23386  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 17:30:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	53150  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1275.000.000) 05/13 18:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1275.000.001) 05/13 18:00:01 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1275.000.000) 05/13 18:00:01 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 18:00:03 Changing job attribute SocketServer from undefined to ' 5022'
+...
+015 (1275.000.000) 05/13 18:00:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23441  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23441  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 18:00:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 18:00:10 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23383  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23383  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 18:00:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46824  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1275.000.000) 05/13 18:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1275.000.001) 05/13 18:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1275.000.000) 05/13 18:30:00 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 18:30:02 Changing job attribute SocketServer from undefined to ' 5022'
+...
+015 (1275.000.000) 05/13 18:30:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23441  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23441  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 18:30:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 18:30:11 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23449  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23449  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 18:30:11 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46890  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1275.000.000) 05/13 19:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1275.000.001) 05/13 19:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1275.000.000) 05/13 19:00:01 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 19:00:03 Changing job attribute SocketServer from undefined to ' 5022'
+...
+015 (1275.000.000) 05/13 19:00:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23441  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23441  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 19:00:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 19:00:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23449  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23449  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 19:00:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46890  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1275.000.000) 05/13 19:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1275.000.001) 05/13 19:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1275.000.000) 05/13 19:30:00 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 19:30:02 Changing job attribute SocketServer from undefined to ' 5022'
+...
+015 (1275.000.000) 05/13 19:30:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26532  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	26532  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 19:30:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 19:30:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23452  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23452  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 19:30:09 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	49984  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1275.000.001) 05/13 20:00:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+014 (1275.000.000) 05/13 20:00:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+001 (1275.000.000) 05/13 20:00:00 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 20:00:02 Changing job attribute SocketServer from undefined to ' 5022'
+...
+015 (1275.000.000) 05/13 20:00:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23441  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23441  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 20:00:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 20:00:09 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23449  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23449  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 20:00:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	46890  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
+014 (1275.000.000) 05/13 20:30:00 Node 0 executing on host: <115.25.138.244:48471>
+...
+014 (1275.000.001) 05/13 20:30:00 Node 1 executing on host: <128.104.153.60:39772>
+...
+001 (1275.000.000) 05/13 20:30:00 Job executing on host: MPI_job
+...
+033 (1275.000.000) 05/13 20:30:03 Changing job attribute SocketServer from undefined to ' 5022'
+...
+015 (1275.000.000) 05/13 20:30:06 Node 0 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26611  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	26611  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+033 (1275.000.000) 05/13 20:30:06 Changing job attribute SocketServer from ' 5022' to UNDEFINED
+...
+015 (1275.000.001) 05/13 20:30:10 Node 1 terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	23452  -  Run Bytes Sent By Node
+	16462  -  Run Bytes Received By Node
+	23452  -  Total Bytes Sent By Node
+	16462  -  Total Bytes Received By Node
+...
+004 (1275.000.000) 05/13 20:30:10 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	50063  -  Run Bytes Sent By Job
+	32924  -  Run Bytes Received By Job
+	(1) Normal termination (return value 0)
+	The job attribute OnExitRemove expression 'false' evaluated to FALSE
+...
