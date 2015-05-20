@@ -3,7 +3,7 @@ import re
 
 class Analyzer:
     #regOfIperf = "\\d{3}\\s\\(\\d{4}\\.\\d{3}\\.\\d{3}\\)\\s\\d{2}/\\d{2}\\s(\\d{2}:){2}\\d{2}\\s'iperf.*'"
-    regOfIperf = "'iperf.*'"
+    #regOfIperf = "'iperf.*'"
     def match(self, reg, strToMatch, result):
         pattern = re.compile(reg)
         match = pattern.search(strToMatch)
@@ -32,11 +32,11 @@ class Analyzer:
         return True
         #print(bandwidth)
 
-    def analyze(self, strToMatch):
+    def analyze(self, strToMatch, reg):
 #        strToMatch = "008 (3014.000.000) 03/10 22:30:17 'iperf,flashio-osg.calit2.optiputer.net,\
 #komatsu.chtc.wisc.edu,1426051806.244003,1426051817.145583,1,10.901580,4697344'" 
         result = ''
-        matchResult = self.match(self.regOfIperf, strToMatch, result)
+        matchResult = self.match(reg, strToMatch, result)
         if matchResult[0]:
             resultSet = self.combi(matchResult[1])
             #print result

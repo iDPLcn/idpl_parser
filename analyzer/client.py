@@ -36,14 +36,13 @@ class Client:
 		self.sourceFile.close
     
 	def combi(self, result):
-		#return "/home/kun/GraduationProject/post_iperf_time.sh " + result + " USERNAME=idpl PASSWORD=idpl@jsi HOSTNAME=115.25.138.244:11401"
-		return self.uriShell+ " " + result + " USERNAME=idpl PASSWORD=idpl@jsi HOSTNAME=115.25.138.244:11401"
+		return self.uriShell+ " " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
 
 	def excuteShell(self, result):
 		output = os.popen(result)
 		#print(output.read())
 
-	def checkTime(self, result, time):
+	def check(self, result, time):
 		resultArray = result.split(' ')
 		#print('checktime', resultArray[len(resultArray) - 5], time)
 		if(float(resultArray[len(resultArray) - 5]) <= float(time[0])):
@@ -77,9 +76,9 @@ and make sure write the correct time stamp which is the newest one in the databa
             
 			for i in range (len(fileLines) - 1, 0, -1):
 				#print(line)
-				result = analyzer.analyze(fileLines[i])
+				result = analyzer.analyze(fileLines[i], "'iperf.*'")
 				if result[0]:
-					if self.checkTime(result[1],timeR):
+					if self.check(result[1],timeR):
 						isFinished =  True
 						break
                     
