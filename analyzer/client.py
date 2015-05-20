@@ -60,7 +60,11 @@ class Client:
 		self.getOptions()
 
 		if not os.path.exists(self.uriTime):
+<<<<<<< HEAD
 			print('WARN! Create a timeRead file!')
+=======
+			print('WARN! Create timeRead file!')
+>>>>>>> origin/master
 			sys.exit(0)
         
 		timeReadFile = open(self.uriTime)
