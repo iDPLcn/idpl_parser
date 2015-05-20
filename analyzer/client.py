@@ -60,8 +60,7 @@ class Client:
 		self.getOptions()
 
 		if not os.path.exists(self.uriTime):
-			print('WARN! You should create an file name "timeRead.txt" in the path same as client.py\'s,\n\
-and make sure write the correct time stamp which is the newest one in the database,\nthen restart the script.')
+			print('WARN! Create a timeRead file!')
 			sys.exit(0)
         
 		timeReadFile = open(self.uriTime)
