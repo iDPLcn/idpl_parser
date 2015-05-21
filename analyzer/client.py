@@ -42,11 +42,12 @@ class Client:
 		output = os.popen(result)
 		#print(output.read())
 
-	def check(self, result, timeR):
+	def check(self, result, timeR, offset):
 		resultArray = result[1].split(' ')
-		if(float(resultArray[len(resultArray) - 5]) < float(timeR[1])):
+		print 
+		if(float(resultArray[len(resultArray) - offset]) < float(timeR[1])):
 			return True
-		elif(abs(float(resultArray[len(resultArray) - 5]) - float(timeR[1])) < 0.000001):
+		elif(abs(float(resultArray[len(resultArray) - offset]) - float(timeR[1])) < 0.000001):
 			return result[2] == timeR[0]
 		return False
 
@@ -64,7 +65,8 @@ class Client:
 		return timeRead
 
 	def main(self, analyzer):
-
+		
+		offset = 6
 		isFinished = False
 		isNewTime = True
 		self.getOptions()
@@ -85,12 +87,12 @@ class Client:
 				#print(line)
 				result = analyzer.analyze(fileLines[i], tools)
 				if result[0]:
-					if self.check(result, timeR):
+					if self.check(result, timeR, offset):
 						isFinished =  True
 						break
                     
 					if (isNewTime):
-						timestampNew = self.splitStr(result[1], ' ', 6)
+						timestampNew = self.splitStr(result[1], ' ', offset)
 						timeRNew = result[2] + "," + timestampNew
 						isNewTime = False
 					print self.combi(result[1], result[2])  
