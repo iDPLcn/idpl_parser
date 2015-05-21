@@ -44,7 +44,6 @@ class Client:
 
 	def check(self, result, timeR, offset):
 		resultArray = result[1].split(' ')
-		print 
 		if(float(resultArray[len(resultArray) - offset]) < float(timeR[1])):
 			return True
 		elif(abs(float(resultArray[len(resultArray) - offset]) - float(timeR[1])) < 0.000001):
@@ -100,7 +99,7 @@ class Client:
 			self.closeFile()
 
 		with open(self.uriTime, 'w') as timeReadFile:
-			print(timeRNew)
+			#print(timeRNew)
 			timeReadFile.write(timeRNew)
 
 

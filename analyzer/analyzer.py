@@ -13,7 +13,6 @@ class Analyzer:
         return False,result
             
     def combi(self, strToCombi, tool):
-		print (tool)
 		strArray = strToCombi.split(',')[1:]
 		if tool == "netcat":
 			datasize = strArray[len(strArray) - 1]
