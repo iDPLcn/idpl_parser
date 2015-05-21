@@ -12,16 +12,19 @@ class Analyzer:
             return True, result
         return False,result
             
-    def combi(self, strToCombi):
-        #print (strToCombi)
-        strArray = strToCombi.split(',')[1:]
-        if (not self.deal(strArray)):
-            return False, ''        
-        #print(strArray)
-        seq = ' '
-        strToCombi = seq.join(strArray)
-        #print(strToCombi)
-        return [True, strToCombi]
+    def combi(self, strToCombi, tool):
+		print (tool)
+		strArray = strToCombi.split(',')[1:]
+		if tool == "netcat":
+			datasize = strArray[len(strArray) - 1]
+			strArray[len(strArray) - 1] = str(float(datasize) / 1024)
+		if (not self.deal(strArray)):
+			return False, ''
+			#print(strArray)
+		seq = ' '
+		strToCombi = seq.join(strArray)
+		#print(strToCombi)
+		return [True, strToCombi]
 
     def deal(self, strArray):
         bandwidth = float('%0.2f'%((float(strArray[len(strArray) - 1]) * 1024 * 8) / float(strArray[len(strArray) - 2])))
@@ -37,7 +40,7 @@ class Analyzer:
 			reg = "'" + tool + ".*'"
 			matchResult = self.match(reg, strToMatch, result)
 			if matchResult[0]:
-				resultSet = self.combi(matchResult[1])
+				resultSet = self.combi(matchResult[1], tool)
 				resultSet.append(tool)
 				break
 			else:
