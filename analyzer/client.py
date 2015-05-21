@@ -12,21 +12,21 @@ class Client:
     #uriTime = '/home/kun/GraduationProject/DataAccessor0.12/timeRead.txt'
 	uriLog = ""
 	uriTime = ""
-	uriShell = ""
-	sourceFile = []
+	shellPath = ""
+	sorceFile = []
 
 	def getOptions(self):
 		opts, args = getopt.getopt(sys.argv[1:], "hl:t:s:", ["help", "log=", "timeStamp=", "shellScript="])
 		for op,value in opts:
 			if op in ("-h", "--help"):
-				print("client.py -l <log path> -t <timeRead path> -s <shell path>")
+				print("client.py -l <log file> -t <timeRead file> -s <shell path>")
 				sys.exit(1)
 			elif op in ("-l", "--log"):
 				self.uriLog = value
 			elif op in ("-t", "--timeStamp"):
 				self.uriTime = value
 			elif op in ("-s", "--shellScript"):
-				self.uriShell = value
+				self.shellPath = value
 
 	def readLog(self, uri):
 		with  open(uri) as self.sourceFile:
@@ -35,8 +35,8 @@ class Client:
 	def closeFile(self):
 		self.sourceFile.close
     
-	def combi(self, result):
-		return self.uriShell+ " " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
+	def combi(self, result, reg):
+		return self.shellPath + "post_" + reg + "_time.sh" + " " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
 
 	def excuteShell(self, result):
 		output = os.popen(result)
@@ -90,15 +90,15 @@ class Client:
 						break
                     
 					if (isNewTime):
-						timestampNew = self.splitStr(result[1], ' ', 5)
+						timestampNew = self.splitStr(result[1], ' ', 6)
 						timeRNew = result[2] + "," + timestampNew
 						isNewTime = False
-					print self.combi(result[1])  
-					#self.excuteShell(self.combi(result[1]))
+					print self.combi(result[1], result[2])  
+					#self.excuteShell(self.combi(result[1], result[2]))
 			self.closeFile()
 
 		with open(self.uriTime, 'w') as timeReadFile:
-			#print(timeRNew)
+			print(timeRNew)
 			timeReadFile.write(timeRNew)
 
 
