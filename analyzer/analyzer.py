@@ -14,9 +14,12 @@ class Analyzer:
             
     def combi(self, strToCombi, tool):
 		strArray = strToCombi.split(',')[1:]
+		print strArray
 		if tool == "netcat":
+			print(strArray[len(strArray) - 1])
 			datasize = strArray[len(strArray) - 1]
 			strArray[len(strArray) - 1] = str(float(datasize) / 1024)
+			print(strArray[len(strArray) - 1])
 		if (not self.deal(strArray)):
 			return False, ''
 			#print(strArray)
@@ -39,6 +42,7 @@ class Analyzer:
 			reg = "'" + tool + ".*'"
 			matchResult = self.match(reg, strToMatch, result)
 			if matchResult[0]:
+				print(matchResult[1])
 				resultSet = self.combi(matchResult[1], tool)
 				resultSet.append(tool)
 				break
