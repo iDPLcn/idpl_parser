@@ -1,1 +1,17 @@
 scripts to synchronize data on the other nodes
+
+unit
+	in log
+		iperf: (datasize, KB)
+		scp/netcat: (datasize, B)
+	in database
+		(datasize,KB) """ so datasize in scp/netcat need to divide by 1024 """
+		(bandwidth,b/s)
+
+formula
+	iperf: bandwidth = datasize * 1024 * 8 / time
+	scp/netcat: bandwidth = (datasize / 1024) * 1024 * 8 / time
+
+scale
+	1kB = 1024B
+	1kb = 1000b
