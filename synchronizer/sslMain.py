@@ -41,6 +41,7 @@ for opt, arg in opts:
 	elif opt in ("-c", "--config"):
 		config = arg
 
+
 resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-c", config])
 print ("".join(output))
 if resultcode < 0:

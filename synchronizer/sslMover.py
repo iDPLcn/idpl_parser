@@ -2,7 +2,7 @@
 # encoding: UTF-8
 
 import socket,ssl
-import sys,os
+import sys,os,traceback
 import time
 from thread import *
 import re, getopt
@@ -12,53 +12,55 @@ from xml.etree import ElementTree as ET
 chirp = CondorTools.CondorChirp()
 
 class FileReader:
-	
+
 	def __init__(self):
-		
 		self.fileUri = ""
 		self.offsetLast = 0
 		self.offsetNew = 0
 		self.offsetNow = 0
 		self.timestampNew = ""
-		self.isHasChanged = False
-	
+		self.hasChanged = False
+
 	def read(self, fileUriNow):
 		with open(fileUriNow) as text:
 			return text.readlines()
-	
-	def getALine(self, fileLines):
-		 return fileLines.pop()
 
 	def match(self, reg, strToMatch, timestamp):
-		match = re.compile(reg).search(strToMatch)
-		
+		""" identify if a line matches the rule to add.
+			if passes the regular expression test, 
+				update timestampNew and offsetNew when first time passes
+				compare the timestamp, choose the line timestampNow > timestamp
+			else 
+				add the line"""
+
+		match = re.compile(reg).search(strToMatch)	
 		if match:
 			timestampNow = match.group()[1:(len(match.group()) - 1)].split(',')[3]
-			if not self.isHasChanged:
+			if not self.hasChanged:
 				self.timestampNew = timestampNow
 				self.offsetNew = self.offsetNow
-				self.isHasChanged = True
+				self.hasChanged = True
 			return float(timestampNow) > timestamp				
 		else:
-			if not self.isHasChanged:
+			if not self.hasChanged:
 				self.offsetNow += 1
 			return True
 
 	def getNewFilePath(self, suffix):
+		""" get the log rotated """
 		return "%s.%d" % (self.fileUri, suffix), suffix + 1
 	
-
 	def chooseLinesInAFile(self, fileLines, reg, timestamp, strAdded, isTimeReached):
-		while len(fileLines):
-			line = self.getALine(fileLines)
+		""" choose lines match the rules in a file """
+		for line in fileLines[::-1]:
 			if self.match(reg, line, timestamp):
 				strAdded.insert(0, line)
 			else:
 				isTimeReached = True
 				break
 		return strAdded, isTimeReached
-		
-
+	
+	""" get all lines in a transfer """
 	def chooseLines(self, timestamp, offsetL, path):
 		self.fileUri = path
 		self.offsetLast = offsetL
@@ -67,14 +69,23 @@ class FileReader:
 		strAdded = []
 		fileUriNow = self.fileUri
 		suffix = 0
+		
 		if not os.path.exists(fileUriNow):
 			print("file not exist!")
 			sys.exit(0)
+		
+		""" scan all logs including rotated if exist """	
 		while (not isTimeReached and os.path.exists(fileUriNow)):
 			fileLines = self.read(fileUriNow)
 			strAdded, isTimeReached = self.chooseLinesInAFile(fileLines, reg, timestamp, strAdded, isTimeReached)
 			fileUriNow, suffix = self.getNewFilePath(suffix)
+		
 		return ''.join(strAdded[self.offsetLast:]), self.timestampNew, str(self.offsetNew)
+
+class TransmissionException(Exception):
+	def __init__(self, msg):
+		Exception.__init__(self, msg)
+		self.msg = msg
 
 class Server:
 	def __init__(self, path, port):
@@ -87,28 +98,31 @@ class Server:
 		timestampNew = ""
 		offset = ""
 		offsetNew = ""
+		
+		""" get data to transfer via timestamp and offset from client and send data to client """
 		while True:
 			data = conn.recv(64)
 			
 			if self.match(r"\d+(\.\d+)?,\d+", data):
 				timestamp, offset = data.split(',')
 				strAdded, timestampNew, offsetNew = FileReader().chooseLines(float(timestamp), int(offset), self.path)
-				dataToSend = "%sKUNSIGN%sKUNSIGN%s" % (strAdded, timestampNew, offsetNew)
+				dataToSend = "%s" % strAdded
 				conn.sendall(str(len(dataToSend)))
 			
-			elif self.match("KUNBEGIN", data):
+			elif self.match("BEGIN", data):
 				conn.sendall(dataToSend)
 			
-			elif self.match("KUNSTOP", data):
-				print("value error")
-				raise
-			else: 
+			elif self.match("STOP", data):
+				raise TransmissionException("value error")
+			
+			elif self.match("END", data): 
 				break
+		
+		""" send the new timestamp and offset """
+		conn.sendall("%s,%s" % (timestampNew, offsetNew))
 
 	def match(self, reg, strToMatch):
 		return re.compile(reg).match(strToMatch)
-
-		
 
 	def changeFlag(self):
 		time.sleep(2)
@@ -116,7 +130,7 @@ class Server:
 	
 	def serve(self):
 		""" create an x509 cert and an rsa private key """
-		path = "/tmp/"
+		path = "./"
 		certpath = "%scert.pem" % path
 		keypath = "%skey.pem" % path
 		os.popen("echo '\n\n\n\n\n\n\n' | openssl req -newkey rsa:1024 -x509 -days 365 -nodes -out %s -keyout %s" % (certpath, keypath))
@@ -128,28 +142,31 @@ class Server:
 				certStr = "%s%s" % (certStr, line.strip("\n"))
 		chirp.setJobAttr("SSLCert", "'%s'" % certStr)
 
-
+		""" create a socket"""
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		try:
 			sock.bind(("", int(self.port)))
 		except socket.error, msg:
-			print ("Bind failed. Error Code: %s Message %s" % (str(msg[0]), msg[1]))
+			print("Bind failed. Error Code: %s Message %s" % (str(msg[0]), msg[1]))
 			sys.exit()
 
-
+		""" wait to connect from client """
 		sock.listen(1)
-
 		start_new_thread(self.changeFlag, ())
 		conn, addr = sock.accept()
+		
+		""" wrap socket via ssl """
 		conn_ssl = ssl.wrap_socket(conn, server_side = True, certfile = certpath, keyfile = keypath)
 		try:
 			self.commuWithClient(conn_ssl)
-		except :
-			print ("value error!")
-			raise
+		except TransmissionException, trans:
+			print("%s" % trans.msg)
+			traceback.print_exc()
+
+		
 		finally:
 			sock.close()
-			print ("socket close now !")
+			print("socket close now !")
 			chirp.setJobAttr("SSLServer", None)
 			chirp.setJobAttr("SSLCert", None)
 		sys.exit()
@@ -159,15 +176,15 @@ class XmlHandler:
 	def __init__(self, xmlfile):
 		self.xmlTree = self.readXml(xmlfile)
 	
-	def readXml(self, in_path):		
+	def readXml(self, in_path):
+		""" get the tree of xml file """
 		if not os.path.exists(in_path):
-			print ("there is no such file: %s" % in_path)
+			print("there is no such file: %s" % in_path)
 			sys.exit()
 		try:
 			tree = ET.parse(in_path)
-		except:
-			print ("tree parse error")
-			raise
+		except :
+			print("tree parse error")
 		return tree	
 	
 	def getNodes(self, tree):
@@ -180,12 +197,13 @@ class XmlHandler:
 				return node
 	
 	def getTexts(self, nodes, tags):
+		""" get the content in xml flie via tags """
 		texts = []
 		for tag in tags:
 			texts.append(self.findNode(nodes, tag).text)
 		return texts			
 
-	def read(self):		
+	def read(self):
 		nodes = self.getNodes(self.xmlTree)
 		path, timestamp, offset= self.getTexts(nodes, ["path", "timestamp", "offset"])
 		return  path, timestamp, offset
@@ -202,8 +220,6 @@ class XmlHandler:
 		self.setTexts([newTimestamp, newOffset], ["timestamp", "offset"])
 		self.xmlTree.write(xmlfile, encoding="utf-8")
 
-
-
 class Client:
 
 	def __init__(self,config):
@@ -211,18 +227,18 @@ class Client:
 
 	def get_constant(self, prefix):
 		"""Create a dictionary mapping socket module constants to their names."""
-		return dict( (getattr(socket, n), n)
-						for n in dir(socket) if n.startswith(prefix)
-					)
+		return dict(
+			(getattr(socket, n), n)	for n in dir(socket) if n.startswith(prefix)
+		)
 
 	def get_constants(self, sock):
 		families = self.get_constant('AF_')
 		types = self.get_constant('SOCK_')
 		protocols = self.get_constant('IPPROTO_')		
 		
-		print 'Family  :', families[sock.family]
-		print 'Type    :', types[sock.type]
-		print 'Protocol:', protocols[sock.proto]
+		print('Family  :', families[sock.family])
+		print('Type    :', types[sock.type])
+		print('Protocol:', protocols[sock.proto])
 	
 	def writeSSLCert(self, path, sslCert):
 		certBegin = sslCert[ : 27]
@@ -230,6 +246,7 @@ class Client:
 		#TODO if 27 > len -25 ?
 		certContent = sslCert[27 : -25]
 		certContentList = []
+		
 		for i in range(0, len(certContent), 64):
 			line = certContent[i : i + 64]
 			certContentList.append(line + "\n")
@@ -239,15 +256,12 @@ class Client:
 		with open(path, "w") as certfile:
 			certfile.write(certDealt)
 
-
-		
-
 	def request(self):
 		""" Read xml file """
 		try:
 			xmlHandler = XmlHandler(self.config)
 		except:
-			print "xml read error"
+			print("xml read error")
 			sys.exit()
 		path, timestamp, offset = xmlHandler.read()
 		
@@ -258,7 +272,7 @@ class Client:
 		host,port = serverInfo.strip("'").split()
 		
 		""" Write the ssl certificate """
-		certpath = "/tmp/cert.pem"
+		certpath = "./cert.pem"
 		sslCert = chirp.getJobAttrWait("SSLCert", None, interval, maxtries).strip("'")
 		self.writeSSLCert(certpath, sslCert)
 
@@ -268,42 +282,46 @@ class Client:
 		sockSSL = ssl.wrap_socket(sock, ca_certs = certpath, cert_reqs = ssl.CERT_REQUIRED)
 		
 
+		""" Send data """
 		try:
-			""" Send data """
+			
+			""" get amount of data to receive """
 			message = "%s,%s" % (timestamp, offset)
 			sockSSL.sendall(message)
-			amount_received = 0			
 			rec = sockSSL.recv(64)
 			amount = int(rec)
-			sockSSL.sendall("KUNBEGIN")
-    			
-			dataComp = ""
+			amount_received = 0			
+			
+			""" receive data """
+			sockSSL.sendall("BEGIN")
+			strAdded = ""
 			while amount_received < int(amount):
 				data = sockSSL.recv(min(4096, int(amount) - amount_received))
-				dataComp += data
+				strAdded += data
 				amount_received += len(data)
+			sockSSL.sendall("END")
 			
-			strAdded, timestamp, offset = dataComp.split("KUNSIGN")
+			""" receive new timestamp and offset """
+			data = sockSSL.recv(1024)
+			timestamp, offset = data.split(",")
 			
+			""" write data to log, write timestamp and offset to xml file """
 			if not amount_received < amount:
 				with open(path, "a") as output:
 					output.write(strAdded)
-				#if timestamp and offset:
-					#xmlHandler.write(timestamp, offset, self.config)
-		except:
-			sockSSL.sendall("KUNSTOP")
-			print "amount value error"
-			raise
+				if timestamp and offset:
+					xmlHandler.write(timestamp, offset, self.config)
+		except Exception, e:
+			sockSSL.sendall("STOP")
+			traceback.print_exc()	
 
 		finally:
-			print 'closing socket'
+			print('closing socket')
 			sockSSL.close()
 			sock.close()
 
-
 def usage():
 	print("sslMain.py -l <logpath> -p <port> -c <clientconfigfile>")
-
 
 def main(argv):
 	if len(sys.argv) < 6:
