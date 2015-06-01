@@ -35,8 +35,13 @@ class Client:
 	def closeFile(self):
 		self.sourceFile.close
     
-	def combi(self, result, reg):
-		return self.shellPath + "post_" + reg + "_time.sh" + " " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
+	def combi(self, result, tool):
+		suffix = " USERNAME=username PASSWORD=password HOSTNAME=host:port"
+		if tool == "iperf":
+			return self.shellPath + "post_iperf_time.sh " + result + suffix
+		elif tool == "netcat" or tool == "scp":
+			return self.shellPath + "post_netcat_time.sh " + result + suffix
+		return None
 
 	def excuteShell(self, result):
 		output = os.popen(result)
@@ -44,9 +49,10 @@ class Client:
 
 	def check(self, result, timeR, offset):
 		resultArray = result[1].split(' ')
-		if(float(resultArray[len(resultArray) - offset]) < float(timeR[1])):
+		print resultArray
+		if float(resultArray[len(resultArray) - offset]) < float(timeR[1]):
 			return True
-		elif(abs(float(resultArray[len(resultArray) - offset]) - float(timeR[1])) < 0.000001):
+		elif abs(float(resultArray[len(resultArray) - offset]) - float(timeR[1])) < 0.000001:
 			return result[2] == timeR[0]
 		return False
 
@@ -69,7 +75,7 @@ class Client:
 		isFinished = False
 		isNewTime = True
 		self.getOptions()
-		tools = ["iperf", "netcat"]
+		tools = ["iperf", "scp"]
 
 		if not os.path.exists(self.uriTime):
 			print('WARN! Create a timeRead file!')
@@ -90,16 +96,16 @@ class Client:
 						isFinished =  True
 						break
                     
-					if (isNewTime):
+					if isNewTime:
 						timestampNew = self.splitStr(result[1], ' ', offset)
 						timeRNew = result[2] + "," + timestampNew
 						isNewTime = False
 					print self.combi(result[1], result[2])  
-					#self.excuteShell(self.combi(result[1], result[2]))
+					self.excuteShell(self.combi(result[1], result[2]))
 			self.closeFile()
 
+		print(timeRNew)
 		with open(self.uriTime, 'w') as timeReadFile:
-			#print(timeRNew)
 			timeReadFile.write(timeRNew)
 
 
