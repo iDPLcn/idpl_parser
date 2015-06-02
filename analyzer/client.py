@@ -6,10 +6,6 @@ import os,time
 import sys,getopt
 
 class Client:
-    #uriLog = '/home/idpl/results/idpl.cnic/b2c.log'
-    #uriTime = '/home/kunq/DataAccessor0.12/timeRead.txt'
-    #uriLog = '/home/kun/GraduationProject/b2c.log'
-    #uriTime = '/home/kun/GraduationProject/DataAccessor0.12/timeRead.txt'
 	uriLog = ""
 	uriTime = ""
 	shellPath = ""
@@ -35,8 +31,11 @@ class Client:
 	def closeFile(self):
 		self.sourceFile.close
     
-	def combi(self, result, reg):
-		return self.shellPath + "post_" + reg + "_time.sh" + " " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
+	def combi(self, result, tool):
+		if tool == "iperf":
+			return self.shellPath + "post_iperf_time.sh " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
+		elif tool == "netcat" or tool == "scp":
+			return self.shellPath + "post_netcat_time.sh " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
 
 	def excuteShell(self, result):
 		output = os.popen(result)
@@ -69,7 +68,7 @@ class Client:
 		isFinished = False
 		isNewTime = True
 		self.getOptions()
-		tools = ["iperf", "netcat"]
+		tools = ["iperf", "scp"]
 
 		if not os.path.exists(self.uriTime):
 			print('WARN! Create a timeRead file!')
