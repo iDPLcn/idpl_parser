@@ -6,17 +6,26 @@ import os,time
 import sys,getopt
 
 class Client:
-	uriLog = ""
-	uriTime = ""
-	shellPath = ""
-	sorceFile = []
+	def __init__(self):
+		self.uriLog = ""
+		self.uriTime = ""
+		self.shellPath = ""
+		self.sourceFile = []
+	
+	def usage(self):
+		print("client.py -l <log file> -t <timeRead file> -s <shell path>")
 
 	def getOptions(self):
+		
+		if len(sys.argv) < 7:
+			self.usage()
+			sys.exit()
+		
 		opts, args = getopt.getopt(sys.argv[1:], "hl:t:s:", ["help", "log=", "timeStamp=", "shellScript="])
 		for op,value in opts:
 			if op in ("-h", "--help"):
-				print("client.py -l <log file> -t <timeRead file> -s <shell path>")
-				sys.exit(1)
+				self.usage()
+				sys.exit()
 			elif op in ("-l", "--log"):
 				self.uriLog = value
 			elif op in ("-t", "--timeStamp"):
@@ -24,40 +33,48 @@ class Client:
 			elif op in ("-s", "--shellScript"):
 				self.shellPath = value
 
+	""" read the log rotated """
 	def readLog(self, uri):
+		#TODO
 		with  open(uri) as self.sourceFile:
 			return self.sourceFile.readlines(), True
 
 	def closeFile(self):
 		self.sourceFile.close
     
+	""" choose the corresponding shell to insert into database """
 	def combi(self, result, tool):
 		if tool == "iperf":
 			return self.shellPath + "post_iperf_time.sh " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
 		elif tool == "netcat" or tool == "scp":
 			return self.shellPath + "post_netcat_time.sh " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
-
+	
+	""" insert data into database """
 	def excuteShell(self, result):
 		output = os.popen(result)
-		#print(output.read())
 
+	""" check the data if inserted 
+		if timestmap in the line analyzed now less than timestamp last, indicate the data is inserted
+		else if timestamps are equal, if tool is equal, indicate the data is inserted 
+		else the data has not inserted"""
 	def check(self, result, timeR, offset):
 		resultArray = result[1].split(' ')
-		if(float(resultArray[len(resultArray) - offset]) < float(timeR[1])):
+		if(float(resultArray[-offset]) < float(timeR[1])):
 			return True
-		elif(abs(float(resultArray[len(resultArray) - offset]) - float(timeR[1])) < 0.000001):
+		elif(abs(float(resultArray[-offset]) - float(timeR[1])) < 0.000001):
 			return result[2] == timeR[0]
 		return False
 
 	def splitStr(self, string, char, offset):
 		stringArray = string.split(char)
-		return stringArray[len(stringArray) - offset]
-       
+		return stringArray[-offset]
+      
+	""" get the timestamp last read to """
 	def readTimeRead(self, uri): 
    		try:
 			timeReadFile = open(uri)
 		except:
-			print "file not exists!"			
+			print "timestamp file not exists!"			
 		timeRead = timeReadFile.read().strip("\n")
 		timeReadFile.close
 		return timeRead
@@ -78,11 +95,12 @@ class Client:
 		timeR = timeRead.split(",")
 		timeRNew = timeRead
         
+		""" analyze log """
 		while(not isFinished):
+			#TODO read log rotated
 			fileLines, isFinished = self.readLog(self.uriLog)            
             
-			for i in range (len(fileLines) - 1, 0, -1):
-				#print(line)
+			for i in range (len(fileLines)-1, 0, -1):
 				result = analyzer.analyze(fileLines[i], tools)
 				if result[0]:
 					if self.check(result, timeR, offset):
@@ -93,12 +111,11 @@ class Client:
 						timestampNew = self.splitStr(result[1], ' ', offset)
 						timeRNew = result[2] + "," + timestampNew
 						isNewTime = False
-					print self.combi(result[1], result[2])  
-					#self.excuteShell(self.combi(result[1], result[2]))
+					#print self.combi(result[1], result[2])  
+					self.excuteShell(self.combi(result[1], result[2]))
 			self.closeFile()
 
 		with open(self.uriTime, 'w') as timeReadFile:
-			#print(timeRNew)
 			timeReadFile.write(timeRNew)
 
 
