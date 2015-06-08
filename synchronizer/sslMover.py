@@ -62,6 +62,7 @@ class FileReader:
 	
 	""" get all lines in a transfer """
 	def chooseLines(self, timestamp, offsetL, path):
+		print("extract data")
 		self.fileUri = path
 		self.offsetLast = offsetL
 		reg = "'iperf.*'"
@@ -130,12 +131,14 @@ class Server:
 	
 	def serve(self):
 		""" create an x509 cert and an rsa private key """
+		print("create an ssl certificate and a private key")
 		path = "./"
 		certpath = "%scert.pem" % path
 		keypath = "%skey.pem" % path
 		os.popen("echo '\n\n\n\n\n\n\n' | openssl req -newkey rsa:1024 -x509 -days 365 -nodes -out %s -keyout %s" % (certpath, keypath))
 		
 		""" transfer SSL certificate to client via chirp"""
+		print("send certificate to client")
 		certStr = ""
 		with open(certpath) as cert:
 			for line in cert.readlines():
@@ -143,6 +146,7 @@ class Server:
 		chirp.setJobAttr("SSLCert", "'%s'" % certStr)
 
 		""" create a socket"""
+		print("create a sockect connection")
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		try:
 			sock.bind(("", int(self.port)))
@@ -152,10 +156,12 @@ class Server:
 
 		""" wait to connect from client """
 		sock.listen(1)
+		print("set SSLServer chirp")
 		start_new_thread(self.changeFlag, ())
 		conn, addr = sock.accept()
 		
 		""" wrap socket via ssl """
+		print("transaction with client")
 		conn_ssl = ssl.wrap_socket(conn, server_side = True, certfile = certpath, keyfile = keypath)
 		try:
 			self.commuWithClient(conn_ssl)
@@ -166,7 +172,7 @@ class Server:
 		
 		finally:
 			sock.close()
-			print("socket close now !")
+			print("socket close")
 			chirp.setJobAttr("SSLServer", None)
 			chirp.setJobAttr("SSLCert", None)
 		sys.exit()
@@ -260,23 +266,27 @@ class Client:
 		""" Read xml file """
 		try:
 			xmlHandler = XmlHandler(self.config)
+			print("read xml config file")
 		except:
 			print("xml read error")
 			sys.exit()
 		path, timestamp, offset = xmlHandler.read()
 		
 		""" Get host and port from chirp """
+		print("get SSLServer chirp")
 		interval = 5
 		maxtries = 12*3
 		serverInfo = chirp.getJobAttrWait("SSLServer",None,interval, maxtries)	
 		host,port = serverInfo.strip("'").split()
 		
 		""" Write the ssl certificate """
+		print("get ssl certificate from server")
 		certpath = "./cert.pem"
 		sslCert = chirp.getJobAttrWait("SSLCert", None, interval, maxtries).strip("'")
 		self.writeSSLCert(certpath, sslCert)
 
 		""" Create a TCP/IP socket with SSL """
+		print("create a connection with ssl")
 		sock = socket.create_connection((host, int(port)))
 		self.get_constants(sock)
 		sockSSL = ssl.wrap_socket(sock, ca_certs = certpath, cert_reqs = ssl.CERT_REQUIRED)
@@ -286,6 +296,7 @@ class Client:
 		try:
 			
 			""" get amount of data to receive """
+			print("begin to get data")
 			message = "%s,%s" % (timestamp, offset)
 			sockSSL.sendall(message)
 			rec = sockSSL.recv(64)
@@ -308,8 +319,10 @@ class Client:
 			""" write data to log, write timestamp and offset to xml file """
 			if not amount_received < amount:
 				with open(path, "a") as output:
+					print("update log")
 					output.write(strAdded)
 				if timestamp and offset:
+					print("update config file")
 					xmlHandler.write(timestamp, offset, self.config)
 		except Exception, e:
 			sockSSL.sendall("STOP")
@@ -346,10 +359,12 @@ def main(argv):
 			config = arg
 
 	if int(os.environ['_CONDOR_PROCNO']) == 0:
+		print("client start")
 		client = Client(config)
 		client.request()
 		
 	else:
+		print("server start")
 		chirp.setJobAttr("SSLServer",None)
 		chirp.setJobAttr("SSLCert", None)
 		server = Server(log_path, port)
