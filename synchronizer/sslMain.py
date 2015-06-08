@@ -5,7 +5,6 @@ import TimedExec
 from IDPLException import *
 import sslMover
 
-
 ## *****************************
 ## main routine
 ## *****************************
@@ -41,12 +40,12 @@ for opt, arg in opts:
 	elif opt in ("-c", "--config"):
 		config = arg
 
-
 resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-c", config])
-print ("".join(output))
+sys.stdout.write("output: %s" % "".join(output))
+sys.stderr.write("err: %s" % "".join(err))
 if resultcode < 0:
 	side = int(os.environ['_CONDOR_PROCNO'])
-	print ("Timeout! Result code %d" % resultcode)
+	sys.stderr.write("Timeout! Result code %d" % resultcode)
 	if side == 0:
 		raise TimeOutException("client")
 	else:

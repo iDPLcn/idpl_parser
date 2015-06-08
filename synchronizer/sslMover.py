@@ -62,7 +62,8 @@ class FileReader:
 	
 	""" get all lines in a transfer """
 	def chooseLines(self, timestamp, offsetL, path):
-		print("extract data")
+		iam = "server"
+		ulog(iam, "extract data")
 		self.fileUri = path
 		self.offsetLast = offsetL
 		reg = "'iperf.*'"
@@ -72,6 +73,7 @@ class FileReader:
 		suffix = 0
 		
 		if not os.path.exists(fileUriNow):
+			ulog(iam, "file not exist!")
 			print("file not exist!")
 			sys.exit(0)
 		
@@ -93,7 +95,8 @@ class Server:
 		self.path = path
 		self.host = socket.getfqdn()
 		self.port = port
-	
+		self.iam = "server"
+
 	def commuWithClient(self, conn):
 		timestamp = ""
 		timestampNew = ""
@@ -131,14 +134,14 @@ class Server:
 	
 	def serve(self):
 		""" create an x509 cert and an rsa private key """
-		print("create an ssl certificate and a private key")
+		ulog(self.iam, "create an ssl certificate and a private key")
 		path = "./"
 		certpath = "%scert.pem" % path
 		keypath = "%skey.pem" % path
 		os.popen("echo '\n\n\n\n\n\n\n' | openssl req -newkey rsa:1024 -x509 -days 365 -nodes -out %s -keyout %s" % (certpath, keypath))
 		
 		""" transfer SSL certificate to client via chirp"""
-		print("send certificate to client")
+		ulog(self.iam, "send certificate to client")
 		certStr = ""
 		with open(certpath) as cert:
 			for line in cert.readlines():
@@ -146,35 +149,41 @@ class Server:
 		chirp.setJobAttr("SSLCert", "'%s'" % certStr)
 
 		""" create a socket"""
-		print("create a sockect connection")
+		ulog(self.iam, "create a sockect connection")
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		try:
 			sock.bind(("", int(self.port)))
 		except socket.error, msg:
+			ulog(self.iam, "Bind failed. Error Code: %s Message %s" % (str(msg[0]), msg[1]))
 			print("Bind failed. Error Code: %s Message %s" % (str(msg[0]), msg[1]))
 			sys.exit()
 
 		""" wait to connect from client """
 		sock.listen(1)
-		print("set SSLServer chirp")
+		ulog(self.iam, "set SSLServer chirp")
 		start_new_thread(self.changeFlag, ())
 		conn, addr = sock.accept()
 		
 		""" wrap socket via ssl """
-		print("transaction with client")
+		ulog(self.iam, "transaction with client")
 		conn_ssl = ssl.wrap_socket(conn, server_side = True, certfile = certpath, keyfile = keypath)
 		try:
 			self.commuWithClient(conn_ssl)
 		except TransmissionException, trans:
+			ulog(self.iam, "%s" % trans.msg)
 			print("%s" % trans.msg)
 			traceback.print_exc()
 
 		
 		finally:
 			sock.close()
-			print("socket close")
+			ulog(self.iam, "socket close")
 			chirp.setJobAttr("SSLServer", None)
 			chirp.setJobAttr("SSLCert", None)
+			if os.path.exists(certpath):
+				os.remove(certpath)
+			if os.path.exists(keypath):
+				os.remove(keypath)
 		sys.exit()
 
 
@@ -185,11 +194,13 @@ class XmlHandler:
 	def readXml(self, in_path):
 		""" get the tree of xml file """
 		if not os.path.exists(in_path):
+			chirp.ulog("client : there is no such file: %s" % in_path)
 			print("there is no such file: %s" % in_path)
 			sys.exit()
 		try:
 			tree = ET.parse(in_path)
 		except :
+			chirp.ulog("client : tree parse error")
 			print("tree parse error")
 		return tree	
 	
@@ -230,6 +241,7 @@ class Client:
 
 	def __init__(self,config):
 		self.config = config
+		self.iam = "client"
 
 	def get_constant(self, prefix):
 		"""Create a dictionary mapping socket module constants to their names."""
@@ -242,9 +254,9 @@ class Client:
 		types = self.get_constant('SOCK_')
 		protocols = self.get_constant('IPPROTO_')		
 		
-		print('Family  :', families[sock.family])
-		print('Type    :', types[sock.type])
-		print('Protocol:', protocols[sock.proto])
+		ulog(self.iam, 'Family  : %s' % families[sock.family])
+		ulog(self.iam, 'Type    : %s' % types[sock.type])
+		ulog(self.iam, 'Protocol: %s' % protocols[sock.proto])
 	
 	def writeSSLCert(self, path, sslCert):
 		certBegin = sslCert[ : 27]
@@ -266,27 +278,28 @@ class Client:
 		""" Read xml file """
 		try:
 			xmlHandler = XmlHandler(self.config)
-			print("read xml config file")
+			ulog(self.iam, "read xml config file")
 		except:
+			ulog(self.iam, "xml read error")
 			print("xml read error")
 			sys.exit()
 		path, timestamp, offset = xmlHandler.read()
 		
 		""" Get host and port from chirp """
-		print("get SSLServer chirp")
+		ulog(self.iam, "get SSLServer chirp")
 		interval = 5
 		maxtries = 12*3
 		serverInfo = chirp.getJobAttrWait("SSLServer",None,interval, maxtries)	
 		host,port = serverInfo.strip("'").split()
 		
 		""" Write the ssl certificate """
-		print("get ssl certificate from server")
+		ulog(self.iam, "get ssl certificate from server")
 		certpath = "./cert.pem"
 		sslCert = chirp.getJobAttrWait("SSLCert", None, interval, maxtries).strip("'")
 		self.writeSSLCert(certpath, sslCert)
 
 		""" Create a TCP/IP socket with SSL """
-		print("create a connection with ssl")
+		ulog(self.iam, "create a connection with ssl")
 		sock = socket.create_connection((host, int(port)))
 		self.get_constants(sock)
 		sockSSL = ssl.wrap_socket(sock, ca_certs = certpath, cert_reqs = ssl.CERT_REQUIRED)
@@ -296,7 +309,7 @@ class Client:
 		try:
 			
 			""" get amount of data to receive """
-			print("begin to get data")
+			ulog(self.iam, "begin to get data")
 			message = "%s,%s" % (timestamp, offset)
 			sockSSL.sendall(message)
 			rec = sockSSL.recv(64)
@@ -319,19 +332,25 @@ class Client:
 			""" write data to log, write timestamp and offset to xml file """
 			if not amount_received < amount:
 				with open(path, "a") as output:
-					print("update log")
+					ulog(self.iam, "update log")
 					output.write(strAdded)
 				if timestamp and offset:
-					print("update config file")
+					ulog(self.iam, "update config file")
 					xmlHandler.write(timestamp, offset, self.config)
 		except Exception, e:
 			sockSSL.sendall("STOP")
 			traceback.print_exc()	
 
 		finally:
-			print('closing socket')
+			ulog(self.iam, 'closing socket')
 			sockSSL.close()
 			sock.close()
+			if os.path.exists(certpath):
+				os.remove(certpath)
+
+def ulog(who, message):
+	logMessage = "%s : %s" % (who, message)
+	chirp.ulog(logMessage)
 
 def usage():
 	print("sslMain.py -l <logpath> -p <port> -c <clientconfigfile>")
@@ -359,16 +378,18 @@ def main(argv):
 			config = arg
 
 	if int(os.environ['_CONDOR_PROCNO']) == 0:
-		print("client start")
+		chirp.ulog("client start")
 		client = Client(config)
 		client.request()
 		
 	else:
-		print("server start")
+		chirp.ulog("server start")
 		chirp.setJobAttr("SSLServer",None)
 		chirp.setJobAttr("SSLCert", None)
 		server = Server(log_path, port)
 		server.serve()
+		chirp.setJobAttr("SSLServer", None)
+		chirp.setJobAttr("SSLCert", None)
 
 if __name__ == '__main__':
 	main(sys.argv[1:])
