@@ -14,17 +14,17 @@ timeout = 120
 sslexe = "./sslMover.py"
 log_path = ""
 port = ""
-config = ""
+syn_log = ""
 
 def usage():
-	print("sslMain.py -l <logpath> -p <port> -c <clientconfigfile>")
+	print("sslMain.py -l <logpath> -p <port> -s <syn file>")
 
 if len(sys.argv) < 7:
 	usage()
 	sys.exit()
 
 try:
-	opts, args = getopt.getopt(sys.argv[1:], "hl:p:c:", ["help", "log_path=", "port=", "config="])
+	opts, args = getopt.getopt(sys.argv[1:], "hl:p:s:", ["help", "log_path=", "port=", "syn_log="])
 except getopt.GetoptError:
 	usage()
 	sys.exit()
@@ -37,10 +37,11 @@ for opt, arg in opts:
 		log_path = arg
 	elif opt in ("-p", "--port"):
 		port = arg
-	elif opt in ("-c", "--config"):
-		config = arg
+	elif opt in ("-s", "--syn_log"):
+		syn_log = arg
 
-resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-c", config])
+
+resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-s", syn_log])
 sys.stdout.write("output: %s" % "".join(output))
 sys.stderr.write("err: %s" % "".join(err))
 if resultcode < 0:

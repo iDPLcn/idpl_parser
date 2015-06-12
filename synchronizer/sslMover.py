@@ -239,8 +239,8 @@ class XmlHandler:
 
 class Client:
 
-	def __init__(self,config):
-		self.config = config
+	def __init__(self,syn_log):
+		self.syn_log = syn_log
 		self.iam = "client"
 
 	def get_constant(self, prefix):
@@ -274,17 +274,26 @@ class Client:
 		with open(path, "w") as certfile:
 			certfile.write(certDealt)
 
+	def getTimestampOffset(self):
+		reg = "'iperf.*'"
+		pattern = re.compile(reg)
+		timestamp = "0"
+		offset = 0
+		with open(self.syn_log) as s_log:
+			fileLines = s_log.readlines()
+		for line in fileLines[::-1]:
+			match = pattern.search(line)
+			if match:
+				timestamp = match.group()[1:-1].split(",")[3]
+				break
+			else:
+				offset += 1
+		return timestamp, offset
+
 	def request(self):
-		""" Read xml file """
-		try:
-			xmlHandler = XmlHandler(self.config)
-			ulog(self.iam, "read xml config file")
-		except:
-			ulog(self.iam, "xml read error")
-			print("xml read error")
-			sys.exit()
-		path, timestamp, offset = xmlHandler.read()
 		
+		timestamp, offset = self.getTimestampOffset()
+
 		""" Get host and port from chirp """
 		ulog(self.iam, "get SSLServer chirp")
 		interval = 5
@@ -331,7 +340,7 @@ class Client:
 			
 			""" write data to log, write timestamp and offset to xml file """
 			if not amount_received < amount:
-				with open(path, "a") as output:
+				with open(self.syn_log, "a") as output:
 					ulog(self.iam, "update log")
 					output.write(strAdded)
 				if timestamp and offset:
@@ -353,15 +362,16 @@ def ulog(who, message):
 	chirp.ulog(logMessage)
 
 def usage():
-	print("sslMain.py -l <logpath> -p <port> -c <clientconfigfile>")
+	print("sslMain.py -l <logpath> -p <port> -s <syn log>")
 
 def main(argv):
-	if len(sys.argv) < 6:
+	print "argvs are: " + "".join(argv)
+	if len(argv) < 6:
 		usage()
 		sys.exit()
-
+	
 	try:
-		opts, args = getopt.getopt(argv, "hl:p:c:", ["help", "log_path=", "port=", "config="])
+		opts, args = getopt.getopt(argv, "hl:p:s:", ["help", "log_path=", "port=", "syn_log="])
 	except getopt.GetoptError:
 		usage()
 		sys.exit()
@@ -374,12 +384,12 @@ def main(argv):
 			log_path = arg
 		elif opt in ("-p", "--port"):
 			port = arg
-		elif opt in ("-c", "--config"):
-			config = arg
+		elif opt in ("-s", "--syn_log"):
+			syn_log = arg
 
 	if int(os.environ['_CONDOR_PROCNO']) == 0:
 		chirp.ulog("client start")
-		client = Client(config)
+		client = Client(syn_log)
 		client.request()
 		
 	else:
