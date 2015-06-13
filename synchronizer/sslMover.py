@@ -343,9 +343,6 @@ class Client:
 				with open(self.syn_log, "a") as output:
 					ulog(self.iam, "update log")
 					output.write(strAdded)
-				if timestamp and offset:
-					ulog(self.iam, "update config file")
-					xmlHandler.write(timestamp, offset, self.config)
 		except Exception, e:
 			sockSSL.sendall("STOP")
 			traceback.print_exc()	
