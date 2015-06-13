@@ -122,9 +122,6 @@ class Server:
 			elif self.match("END", data): 
 				break
 		
-		""" send the new timestamp and offset """
-		conn.sendall("%s,%s" % (timestampNew, offsetNew))
-
 	def match(self, reg, strToMatch):
 		return re.compile(reg).match(strToMatch)
 
@@ -333,10 +330,6 @@ class Client:
 				strAdded += data
 				amount_received += len(data)
 			sockSSL.sendall("END")
-			
-			""" receive new timestamp and offset """
-			data = sockSSL.recv(1024)
-			timestamp, offset = data.split(",")
 			
 			""" write data to log, write timestamp and offset to xml file """
 			if not amount_received < amount:

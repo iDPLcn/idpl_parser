@@ -40,7 +40,6 @@ for opt, arg in opts:
 	elif opt in ("-s", "--syn_log"):
 		syn_log = arg
 
-
 resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-s", syn_log])
 sys.stdout.write("output: %s" % "".join(output))
 sys.stderr.write("err: %s" % "".join(err))
