@@ -28,7 +28,7 @@ syn_log=/tmp/testbykun/test1.txt
 #cron_window=60
 
 # Try to run jobs on this schedule
-#cron_minute=55
+#cron_minute=40,45
 #cron_hour=11,23
 #
 # Keep running the job
