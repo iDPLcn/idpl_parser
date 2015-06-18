@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # encoding: UTF-8
 
-import socket,ssl
-import sys,os,traceback
+import socket, ssl
+import sys, os, traceback
 import time, hashlib
 from thread import *
 import re, getopt
@@ -280,6 +280,11 @@ class Client:
 		pattern = re.compile(reg)
 		timestamp = "0"
 		offset = 0
+		if not os.path.exists(self.syn_log):
+			f =	open(self.syn_log, "w")
+			f.close
+			return timestamp, offset
+
 		with open(self.syn_log) as s_log:
 			fileLines = s_log.readlines()
 		for line in fileLines[::-1]:
