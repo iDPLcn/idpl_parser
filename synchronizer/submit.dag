@@ -1,0 +1,5 @@
+JOB A ssl_move-submit
+JOB B ssl_move-submit
+VARS A log_path="/tmp/testbykun/test.txt" syn_log="/tmp/testbykun/test1.txt"
+VARS B log_path="/tmp/testbykun/k2b.txt" syn_log="/tmp/testbykun/k2b1.txt"
+PARENT A CHILD B
