@@ -111,6 +111,14 @@ class Server:
 				timestamp, offset = data.split(',')
 				strAdded, timestampNew, offsetNew = FileReader().chooseLines(float(timestamp), int(offset), self.path)
 				dataToSend = "%s" % strAdded
+				lenOfData = len(dataToSend)
+				
+				""" nothing to update """
+				if lenOfData == 0:
+					conn.sendall("NONE")
+					ulog(self.iam, "nothing to update")
+					break
+				
 				conn.sendall(str(len(dataToSend)))
 				md5OfData = hashlib.md5()
 				md5OfData.update(dataToSend)
@@ -328,6 +336,13 @@ class Client:
 			message = "%s,%s" % (timestamp, offset)
 			sockSSL.sendall(message)
 			rec = sockSSL.recv(64)
+			
+			""" nothing to update """
+			if rec == "NONE":
+				sockSSL.close()
+				sock.close()
+				sys.exit()
+			
 			amount = int(rec)
 			amount_received = 0			
 			
@@ -370,7 +385,7 @@ def usage():
 	print("sslMain.py -l <logpath> -p <port> -s <syn log>")
 
 def main(argv):
-	print "argvs are: " + "".join(argv)
+	print "argvs are: " + " ".join(argv)
 	if len(argv) < 6:
 		usage()
 		sys.exit()
