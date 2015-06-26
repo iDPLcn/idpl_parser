@@ -196,56 +196,6 @@ class Server:
 		sys.exit()
 
 
-class XmlHandler:
-	def __init__(self, xmlfile):
-		self.xmlTree = self.readXml(xmlfile)
-	
-	def readXml(self, in_path):
-		""" get the tree of xml file """
-		if not os.path.exists(in_path):
-			chirp.ulog("client : there is no such file: %s" % in_path)
-			print("there is no such file: %s" % in_path)
-			sys.exit()
-		try:
-			tree = ET.parse(in_path)
-		except :
-			chirp.ulog("client : tree parse error")
-			print("tree parse error")
-		return tree	
-	
-	def getNodes(self, tree):
-		root = tree.getroot()
-		return root.getchildren()		
-		
-	def findNode(self, nodes, tag):
-		for node in nodes:
-			if node.tag == tag:
-				return node
-	
-	def getTexts(self, nodes, tags):
-		""" get the content in xml flie via tags """
-		texts = []
-		for tag in tags:
-			texts.append(self.findNode(nodes, tag).text)
-		return texts			
-
-	def read(self):
-		nodes = self.getNodes(self.xmlTree)
-		path, timestamp, offset= self.getTexts(nodes, ["path", "timestamp", "offset"])
-		return  path, timestamp, offset
-	
-	def writeXml(self, node, text):
-		node.text = text
-	
-	def setTexts(self, texts, tags):
-		nodes = self.getNodes(self.xmlTree)
-		for text, tag in zip(texts, tags):
-			self.writeXml(self.findNode(nodes, tag), text)
-
-	def write(self, newTimestamp, newOffset, xmlfile):
-		self.setTexts([newTimestamp, newOffset], ["timestamp", "offset"])
-		self.xmlTree.write(xmlfile, encoding="utf-8")
-
 class Client:
 
 	def __init__(self,syn_log):
@@ -353,7 +303,6 @@ class Client:
 				data = sockSSL.recv(min(4096, int(amount) - amount_received))
 				strAdded += data
 				amount_received += len(data)
-			sockSSL.sendall("END")
 			
 			""" get md5 from server and generate md5 data received """
 			md5FromServer = chirp.getJobAttrWait("MD5OfData", None, interval, maxtries).strip("'")
@@ -361,6 +310,8 @@ class Client:
 			md5LocalGen.update(strAdded)
 			md5Local = md5LocalGen.hexdigest()
 
+			sockSSL.sendall("END")
+			
 			""" write data to log """
 			if not amount_received < amount and md5FromServer == md5Local:
 				with open(self.syn_log, "a") as output:
