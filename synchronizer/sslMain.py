@@ -15,6 +15,7 @@ sslexe = "./sslMover.py"
 log_path = ""
 port = ""
 syn_log = ""
+reg_exp = ""
 
 def usage():
 	print("sslMain.py -l <logpath> -p <port> -s <syn file>")
@@ -24,7 +25,7 @@ if len(sys.argv) < 7:
 	sys.exit()
 
 try:
-	opts, args = getopt.getopt(sys.argv[1:], "hl:p:s:", ["help", "log_path=", "port=", "syn_log="])
+	opts, args = getopt.getopt(sys.argv[1:], "hl:p:s:r:", ["help", "log_path=", "port=", "syn_log=", "reg_exp"])
 except getopt.GetoptError:
 	usage()
 	sys.exit()
@@ -39,9 +40,14 @@ for opt, arg in opts:
 		port = arg
 	elif opt in ("-s", "--syn_log"):
 		syn_log = arg
+	elif opt in ("-r", "--reg_exp"):
+		reg_exp = arg
 
+#sslMover.main(sys.argv[1:])
+if reg_exp == "":
+	reg_exp = "'.*writerecord:iperf.*'"
 
-resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-s", syn_log])
+resultcode,output,err=TimedExec.runTimedCmd(timeout,[sslexe, "-l", log_path, "-p", port, "-s", syn_log, "-r", reg_exp])
 sys.stdout.write("output: %s" % " ".join(output))
 sys.stderr.write("err: %s" % " ".join(err))
 if resultcode < 0:

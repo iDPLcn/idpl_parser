@@ -61,12 +61,11 @@ class FileReader:
 		return strAdded, isTimeReached
 	
 	""" get all lines in a transfer """
-	def chooseLines(self, timestamp, offsetL, path):
+	def chooseLines(self, timestamp, offsetL, path, reg):
 		iam = "server"
 		ulog(iam, "extract data")
 		self.fileUri = path
 		self.offsetLast = offsetL
-		reg = "'iperf.*'"
 		isTimeReached = False
 		strAdded = []
 		fileUriNow = self.fileUri
@@ -91,10 +90,11 @@ class TransmissionException(Exception):
 		self.msg = msg
 
 class Server:
-	def __init__(self, path, port):
+	def __init__(self, path, port, reg_exp):
 		self.path = path
 		self.host = socket.getfqdn()
 		self.port = port
+		self.reg_exp = reg_exp
 		self.iam = "server"
 
 	def commuWithClient(self, conn):
@@ -109,7 +109,7 @@ class Server:
 			
 			if self.match(r"\d+(\.\d+)?,\d+", data):
 				timestamp, offset = data.split(',')
-				strAdded, timestampNew, offsetNew = FileReader().chooseLines(float(timestamp), int(offset), self.path)
+				strAdded, timestampNew, offsetNew = FileReader().chooseLines(float(timestamp), int(offset), self.path, self.reg_exp)
 				dataToSend = "%s" % strAdded
 				lenOfData = len(dataToSend)
 				
@@ -198,8 +198,9 @@ class Server:
 
 class Client:
 
-	def __init__(self,syn_log):
+	def __init__(self, syn_log, reg_exp):
 		self.syn_log = syn_log
+		self.reg_exp = reg_exp
 		self.iam = "client"
 
 	def get_constant(self, prefix):
@@ -234,7 +235,7 @@ class Client:
 			certfile.write(certDealt)
 
 	def getTimestampOffset(self):
-		reg = "'iperf.*'"
+		reg = self.reg_exp
 		pattern = re.compile(reg)
 		timestamp = "0"
 		offset = 0
@@ -342,11 +343,12 @@ def main(argv):
 		sys.exit()
 	
 	try:
-		opts, args = getopt.getopt(argv, "hl:p:s:", ["help", "log_path=", "port=", "syn_log="])
+		opts, args = getopt.getopt(argv, "hl:p:s:r:", ["help", "log_path=", "port=", "syn_log=", "reg_exp"])
 	except getopt.GetoptError:
 		usage()
 		sys.exit()
 
+	reg_exp = ""
 	for opt, arg in opts:
 		if opt in ("-h", "--help" ):
 			usage()
@@ -357,10 +359,15 @@ def main(argv):
 			port = arg
 		elif opt in ("-s", "--syn_log"):
 			syn_log = arg
+		elif opt in ("-r", "--reg_exp"):
+			reg_exp = arg
+	
+	if reg_exp == "":
+		reg_exp = "'.*writerecord:iperf.*'"
 
 	if int(os.environ['_CONDOR_PROCNO']) == 0:
 		chirp.ulog("client start")
-		client = Client(syn_log)
+		client = Client(syn_log, reg_exp)
 		client.request()
 		
 	else:
@@ -368,7 +375,7 @@ def main(argv):
 		chirp.setJobAttr("SSLServer",None)
 		chirp.setJobAttr("SSLCert", None)
 		chirp.setJobAttr("MD5OfData", None)
-		server = Server(log_path, port)
+		server = Server(log_path, port, reg_exp)
 		server.serve()
 		chirp.setJobAttr("SSLServer", None)
 		chirp.setJobAttr("SSLCert", None)
