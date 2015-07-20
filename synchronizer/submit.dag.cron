@@ -1,0 +1,6 @@
+# run the dag job periodly
+cron_minute = 55
+cron_hour = 11,23
+cron_window = 120
+on_exit_remove = false
+universe = local
