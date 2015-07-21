@@ -146,7 +146,7 @@ class Server:
 		path = "./"
 		certpath = "%scert.pem" % path
 		keypath = "%skey.pem" % path
-		os.popen("echo '\n\n\n\n\n\n\n' | openssl req -newkey rsa:1024 -x509 -days 365 -nodes -out %s -keyout %s" % (certpath, keypath))
+		os.popen("openssl req -newkey rsa:1024 -x509 -days 365 -nodes -out %s -keyout %s -batch" % (certpath, keypath))
 		
 		""" transfer SSL certificate to client via chirp"""
 		ulog(self.iam, "send certificate to client")
