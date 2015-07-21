@@ -334,7 +334,7 @@ def ulog(who, message):
 	chirp.ulog(logMessage)
 
 def usage():
-	print("sslMain.py -l <logpath> -p <port> -s <syn log>")
+	print("sslMain.py -l <logpath> -p <port> -s <syn log> [-r <reg exp>]")
 
 def main(argv):
 	print "argvs are: " + " ".join(argv)

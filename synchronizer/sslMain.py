@@ -18,7 +18,7 @@ syn_log = ""
 reg_exp = ""
 
 def usage():
-	print("sslMain.py -l <logpath> -p <port> -s <syn file>")
+	print("sslMain.py -l <logpath> -p <port> -s <syn file> [-r <reg exp>]")
 
 if len(sys.argv) < 7:
 	usage()
@@ -43,7 +43,6 @@ for opt, arg in opts:
 	elif opt in ("-r", "--reg_exp"):
 		reg_exp = arg
 
-#sslMover.main(sys.argv[1:])
 if reg_exp == "":
 	reg_exp = "'.*writerecord:iperf.*'"
 
