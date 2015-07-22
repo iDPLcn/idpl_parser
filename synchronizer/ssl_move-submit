@@ -6,7 +6,7 @@
 
 universe = parallel
 executable = sslMain.py
-reg_exp='iperf.*'
+reg_exp='.*writerecord:iperf.*'
 
 SRC_HOST=JSI-iDPL01
 DST_HOST=JSI-iDPL02
