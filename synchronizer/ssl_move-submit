@@ -6,18 +6,13 @@
 
 universe = parallel
 executable = sslMain.py
+reg_exp='iperf.*'
 
-
-#SRC_HOST=mickey.buaa.edu.cn
 SRC_HOST=JSI-iDPL01
-#DST_HOST=komatsu.chtc.wisc.edu
 DST_HOST=JSI-iDPL02
-#log_path=/home/phil/placement/placement2.log
 #log_path=/tmp/testbykun/test.txt
 port=8888
-reg_exp='iperf.*'
 #syn_log=/tmp/testbykun/test1.txt
-#syn_log=/home/idpl/remoteLogs/komatsu/k2b.log
 
 ### Crondor Settings
 # A promise that jobs will not run more often than this (in seconds)

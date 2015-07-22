@@ -343,7 +343,7 @@ def main(argv):
 		sys.exit()
 	
 	try:
-		opts, args = getopt.getopt(argv, "hl:p:s:r:", ["help", "log_path=", "port=", "syn_log=", "reg_exp"])
+		opts, args = getopt.getopt(argv, "hl:p:s:r:", ["help", "log_path=", "port=", "syn_log=", "reg_exp="])
 	except getopt.GetoptError:
 		usage()
 		sys.exit()

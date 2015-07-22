@@ -25,7 +25,7 @@ if len(sys.argv) < 7:
 	sys.exit()
 
 try:
-	opts, args = getopt.getopt(sys.argv[1:], "hl:p:s:r:", ["help", "log_path=", "port=", "syn_log=", "reg_exp"])
+	opts, args = getopt.getopt(sys.argv[1:], "hl:p:s:r:", ["help", "log_path=", "port=", "syn_log=", "reg_exp="])
 except getopt.GetoptError:
 	usage()
 	sys.exit()
@@ -43,6 +43,7 @@ for opt, arg in opts:
 	elif opt in ("-r", "--reg_exp"):
 		reg_exp = arg
 
+#sslMover.main(sys.argv[1:])
 if reg_exp == "":
 	reg_exp = "'.*writerecord:iperf.*'"
 
