@@ -10,10 +10,11 @@ class Client:
 		self.uriLog = ""
 		self.uriTime = ""
 		self.shellPath = ""
+		self.reg_prefix = "undefined"
 		self.sourceFile = []
 	
 	def usage(self):
-		print("client.py -l <log file> -t <timeRead file> -s <shell path>")
+		print("client.py -l <log file> -t <timeRead file> -s <shell path> [-r <regular>]")
 
 	def getOptions(self):
 		
@@ -21,7 +22,7 @@ class Client:
 			self.usage()
 			sys.exit()
 		
-		opts, args = getopt.getopt(sys.argv[1:], "hl:t:s:", ["help", "log=", "timeStamp=", "shellScript="])
+		opts, args = getopt.getopt(sys.argv[1:], "hl:t:s:r:", ["help", "log=", "timeStamp=", "shellScript=", "regular="])
 		for op,value in opts:
 			if op in ("-h", "--help"):
 				self.usage()
@@ -32,6 +33,12 @@ class Client:
 				self.uriTime = value
 			elif op in ("-s", "--shellScript"):
 				self.shellPath = value
+			elif op in ("-r", "--regular"):
+				self.reg_prefix = value
+		if self.reg_prefix == "undefined":
+		  self.reg_prefix = ".*writerecord:"
+		elif self.reg_prefix == "NULL":
+		  self.reg_prefix = ""
 
 	""" read the log rotated """
 	def readLog(self, uri):
@@ -44,10 +51,7 @@ class Client:
     
 	""" choose the corresponding shell to insert into database """
 	def combi(self, result, tool):
-		if tool == "iperf":
-			return self.shellPath + "post_iperf_time.sh " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
-		elif tool == "netcat" or tool == "scp":
-			return self.shellPath + "post_netcat_time.sh " + result + " USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
+		return self.shellPath + "post_measuredata.sh " + result + "  USERNAME=username PASSWORD=password HOSTNAME=hostname:port"
 	
 	""" insert data into database """
 	def excuteShell(self, result):
@@ -85,7 +89,7 @@ class Client:
 		isFinished = False
 		isNewTime = True
 		self.getOptions()
-		tools = ["iperf", "scp"]
+		tools = ["iperf", "scp", "netcat"]
 
 		if not os.path.exists(self.uriTime):
 			print('WARN! Create a timeRead file!')
@@ -100,8 +104,8 @@ class Client:
 			#TODO read log rotated
 			fileLines, isFinished = self.readLog(self.uriLog)            
             
-			for i in range (len(fileLines)-1, 0, -1):
-				result = analyzer.analyze(fileLines[i], tools)
+			for line in range fileLines[::-1]:
+				result = analyzer.analyze(line, tools, self.reg_prefix)
 				if result[0]:
 					if self.check(result, timeR, offset):
 						isFinished =  True

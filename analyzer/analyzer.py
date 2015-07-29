@@ -16,19 +16,19 @@ class Analyzer:
 		strArray = strToCombi.split(',')[1:]
 
 		""" transform the unit of datasize in scp from B to KB """
-		if tool == "scp":
+		if tool != "iperf":
 			datasize = strArray[-1]
 			strArray[-1] = str(float(datasize) / 1024)
 		
-		""" remove the point whose bandwidth is 0 """
-		if (not self.deal(strArray)):
+		""" append bandwidth and remove the point whose bandwidth is 0 """
+		if (not self.deal(strArray, tool)):
 			return [False, '']
 
 		strToCombi = ' '.join(strArray)
 		return [True, strToCombi]
 
-	""" compute the bandwidth """
-	def deal(self, strArray):
+	""" compute and append bandwidth """
+	def deal(self, strArray, tool):
 		bandwidth = float('%0.2f'%((float(strArray[-1]) * 1024 * 8) / float(strArray[-2])))
 		
 		""" remove the point whose bandwidth is 0 """
@@ -36,13 +36,14 @@ class Analyzer:
 			return False
 
 		strArray.append(str(bandwidth))
+		strArray.append(tool)
 		return True
 	
 	""" analyze a line """
-	def analyze(self, strToMatch, tools):
+	def analyze(self, strToMatch, tools, reg_prefix):
 		result = ''
 		for tool in tools:
-			reg = "'" + tool + ".*'"
+			reg = "'" + reg_prefix + tool + ".*'"
 			matchResult = self.match(reg, strToMatch, result)
 			if matchResult[0]:
 				resultSet = self.combi(matchResult[1], tool)
