@@ -1,2 +1,5 @@
 scripts to analyze and deal with data
 
+unit of datasize:
+iperf KB
+netcat, scp, fdt B
