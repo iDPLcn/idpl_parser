@@ -1,0 +1,14 @@
+buaa 10/22:40:00
+	buaa2wisc
+	buaa2cnic
+	buaa2ucsd
+wisc 11/23:20:00
+	wisc2buaa
+	wisc2cnic
+	wisc2ucsd
+ucsd 0/12:20:00
+	ucsd2buaa
+	ucsd2cnic
+	ucsd2wisc
+cnic #TODO
+
