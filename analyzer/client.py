@@ -104,7 +104,7 @@ class Client:
 			#TODO read log rotated
 			fileLines, isFinished = self.readLog(self.uriLog)            
             
-			for line in range fileLines[::-1]:
+			for line in fileLines[::-1]:
 				result = analyzer.analyze(line, tools, self.reg_prefix)
 				if result[0]:
 					if self.check(result, timeR, offset):
