@@ -1,12 +1,12 @@
-buaa 10/22:40:00
+buaa 00:05:00 12:05:00
 	buaa2wisc
 	buaa2cnic
 	buaa2ucsd
-wisc 11/23:20:00
+wisc 00:05:00 12:05:00
 	wisc2buaa
 	wisc2cnic
 	wisc2ucsd
-ucsd 0/12:20:00
+ucsd 00:05:00 12:05:00
 	ucsd2buaa
 	ucsd2cnic
 	ucsd2wisc
