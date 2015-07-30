@@ -89,7 +89,7 @@ class Client:
 		isFinished = False
 		isNewTime = True
 		self.getOptions()
-		tools = ["iperf", "scp", "netcat"]
+		tools = ["iperf", "scp", "netcat", "fdt"]
 
 		if not os.path.exists(self.uriTime):
 			print('WARN! Create a timeRead file!')
