@@ -1,14 +1,25 @@
-buaa 00:05:00 12:05:00
-	buaa2wisc
-	buaa2cnic
-	buaa2ucsd
-wisc 00:05:00 12:05:00
-	wisc2buaa
-	wisc2cnic
-	wisc2ucsd
-ucsd 00:05:00 12:05:00
-	ucsd2buaa
-	ucsd2cnic
-	ucsd2wisc
-cnic #TODO
+International
+	buaa 11:55:00 23:55:00
+		buaa2wisc
+		buaa2cnic
+		buaa2ucsd
+	wisc 00:05:00 12:05:00
+		wisc2buaa
+		wisc2cnic
+		wisc2ucsd
+	ucsd 00:05:00 12:05:00
+		ucsd2buaa
+		ucsd2cnic
+		ucsd2wisc
+	cnic #TODO
 
+Domestic
+	buaa 11:55:00 23:55:00
+		buaa2cnic
+		buaa2yunnan
+	yunnan 00:05:00 12:05:00
+		yunnan2buaa
+		yunnan2cnic
+	cnic 00:05:00 00:05:00
+		cnic2buaa
+		cnic2yunnan
