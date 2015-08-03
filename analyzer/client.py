@@ -85,7 +85,7 @@ class Client:
 
 	def main(self, analyzer):
 		
-		offset = 6
+		offset = 7
 		isFinished = False
 		isNewTime = True
 		self.getOptions()
