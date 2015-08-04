@@ -22,9 +22,9 @@ calit2wisc="/home/idpl/results/calit2wisc/placement4.log /home/idpl/results/cali
 
 
 
-PATH="/home/kunq/analyzer0728/"
-ANALYZER_PATH="${PATH}client.py"
-SHELL_PATH=${PATH}
+WORKSPACE="/home/kunq/analyzer0728/"
+ANALYZER_PATH="${WORKSPACE}client.py"
+SHELL_PATH=${WORKSPACE}
 ALL_PARAMS=(buaa2ucsd buaa2cnic buaa2wisc wisc2buaa wisc2ucsd wisc2cnic wisc2calit2 ucsd2buaa ucsd2cnic ucsd2wisc physics2calit2 calit2physics calit2wisc)
 
 for index in ${ALL_PARAMS[@]}
